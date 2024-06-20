@@ -5,7 +5,10 @@ OnFirstBoot
 	stroke = 0
 	LastTalk = ""
 	
-	"\1\s[10]\0\s[0]Hello, and welcome to the Simplicity Template, %(username).\w8 As the name implies, this template is very simple.\w8 You will notice there is not much here.\w8 That's on purpose!\w8 This template's primary goal is to make ghost creation less intimidating.\w8 You really need almost nothing to make a ghost;\w4 a basic shell with some interesting randomtalk can be an incredible and fun experience.\w8 So all those boring functions to do with email checking and such?\w8 Not here, unless you decide you want to add them.\w8 Don't let tedious functions tire you out before you can finish your ghost!\w8 Make something simple and fun, or start small and expand upon it later!\w8 Embrace the freedom of simplicity!"
+	"\p[0]\s[0] My, my, what have we here?\w8 What a strange place I’ve found myself in. And who are you, dear?\w8 ... %(username), is it? A pleasure."
+
+	"\0\s[0] ...? \w8Oh my, how quaint.\w8 You’ve managed something interesting. I’ll allow this...\w8 Just to see how you can entertain me, dear."
+
 }
 
 OnInitialize
@@ -33,23 +36,31 @@ OnBoot
 	--
 	if _today == _user_birthday
 	{
-		"\0\s[0]It is %(username)'s birthday today.\w8 Happy birthday, %(username).\w8 Developer,\w4 you can add an interesting message here.\w8 It can be as long as you like.\w8 Or, you can remove it entirely."
+		"\0\s[0]Happy birthday, darling!"
 	}
 	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
 	{
-		"\0\s[0]It's new year's day.\w8 Happy %(year),\w4 %(username)."
+		"\0\s[0]It's new year's day for you, is it? Happy day!"
 	}
 	else //Normal boot
 	{
-		"\0\s[0]Hello %(username).\w8 Good to see you."
-		"\0\s[0]Hello.\w8 Ready to make something cool?"
+		"\0\s[0]Oho, so you’ve requested my presence again?"
+		"\0\s[0]Whatever is it? I was in the middle of my tea, I’ll have you know."
+		"\0\s[0]Hmm? \w5I’m here again. Hello, dear."
+		"\0\s[0]Did you miss me so much?\w5 I’m flattered, darling."
+		"\0\s[0]Staying positive, my dear?"
 	}
 }
 
 OnClose
 {
 	"\0\s[0]Farewell."
-	"\0\s[0]Goodbye."
+	"\0\s[0]Goodbye, darling."
+	"\0\s[0]Ta-ta for now~!"
+	"\0\s[0]Toodles, dear!"
+	"\0\s[0]Farewell."
+	"\0\s[0]Have a lovely day!"
+
 	--
 	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
 }
