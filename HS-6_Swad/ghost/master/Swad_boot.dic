@@ -37,10 +37,15 @@ OnBoot
 	if _today == _user_birthday
 	{
 		"\0\s[0]Happy birthday, darling!"
+		"\0\s[0]Happy Birthday, %(username)~! (He blows a kiss.)"
 	}
 	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
 	{
 		"\0\s[0]It's new year's day for you, is it? Happy day!"
+	}
+	elseif _today == "12/21" //Winter solistice, birthday?
+	{
+		"It’s my birthday today, dear. (expectant look)"
 	}
 	else //Normal boot
 	{
