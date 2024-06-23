@@ -1,6 +1,6 @@
 charset,UTF-8
 
-name,Simplicity Template
+name,Swad
 type,ghost
 
 shiori,yaya.dll
@@ -9,8 +9,8 @@ craftman,
 craftmanw,
 craftmanurl,
 
-sakura.name,Simplicity
-kero.name,Template
+sakura.name,Swad
+kero.name,null
 
 icon,icon.ico
 
