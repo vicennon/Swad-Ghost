@@ -21,6 +21,10 @@ RandomTalk : nonoverlap_pool
 	"\0\s[0]Darling, you haven't spoken to me in ages. I'm getting a little cold!"
 	"\0\s[0]My dear, could you spare a little attention for a sweet bird?"
 	"\0\s[0]Should I start singing for your attention?"
+	"\0\s[0]%(username)? Can you still hear me?"
+	"\0\s[0]I'm bored."
+	"\0\s[0]You're still there, right?"
+	
 	
 	//fucking off of his own accord
 	"\0\s[0]Oh my, duty calls.\w8 Summon me when you have need,\w5 darling!\w8\w8\x\-"
