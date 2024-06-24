@@ -1,0 +1,334 @@
+//A quick note about comments: Surfaces.txt does NOT support same line comments. If you want to write a comment, ALWAYS PUT IT ON ITS OWN LINE. If you put comments after other bits of code in the same line, it may seem to work at first, but it can cause cryptic errors down the line. Save yourself the trouble. Always put comments on their own lines in here. Additionally, it doesn't do block comments with /* and */
+
+
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Swad surfaces ——————————————————————————————
+
+
+//—————————————————————————————— Neutral ——————————————————————————————
+surface0
+{	
+
+	//0 is the base body, 1000 is the mouth, 2000 is the eyes, 3000 is the brows and 4000 is the blush or any overlays!
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1000.png,0,0 
+	element2,overlay,surface2000.png,0,0
+	element3,overlay,surface3000.png,0,0
+	element4,overlay,surface4000.png,0,0
+
+// once we get going and see whats needed, we can move these down so they dont take up so much space here/ arent repeated
+
+	//Neutral Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1001,0,0,0
+	animation0.pattern2,overlay,1002,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+	
+	
+	//Neutral Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2001,0,0,0
+	animation2.pattern1,overlay,2002,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2003,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2003,0,0,0
+	animation4.pattern1,overlay,2002,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+}
+//—————————————————————————————— Happy ——————————————————————————————
+surface1
+{	
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1010.png,0,0 
+	element2,overlay,surface2010.png,0,0
+	element3,overlay,surface3001.png,0,0
+	element4,overlay,surface4000.png,0,0
+
+	//Happy Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1011,0,0,0
+	animation0.pattern2,overlay,1012,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+	
+	
+	//Happy Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2011,0,0,0
+	animation2.pattern1,overlay,2012,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2013,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2013,0,0,0
+	animation4.pattern1,overlay,2012,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+}
+
+//—————————————————————————————— Sad ——————————————————————————————
+surface2
+{	
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1030.png,0,0 
+	element2,overlay,surface2030.png,0,0
+	element3,overlay,surface3003.png,0,0
+
+	//Sad Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1031,0,0,0
+	animation0.pattern2,overlay,1032,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+	
+	
+	//Sad Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2031,0,0,0
+	animation2.pattern1,overlay,2032,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2033,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2033,0,0,0
+	animation4.pattern1,overlay,2032,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+}
+
+//—————————————————————————————— Angry ——————————————————————————————
+surface3
+{	
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1040.png,0,0 
+	element2,overlay,surface2040.png,0,0
+	element3,overlay,surface3004.png,0,0
+	element4,overlay,surface4001.png,0,0
+
+	//Sad Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1041,0,0,0
+	animation0.pattern2,overlay,1042,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+	
+	
+	//Sad Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2041,0,0,0
+	animation2.pattern1,overlay,2042,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2043,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2043,0,0,0
+	animation4.pattern1,overlay,2042,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+	
+	//Angry Huffing
+	animation5.interval,always
+	animation5.pattern1,overlay,4050,400,0,0
+	animation5.pattern2,overlay,4051,400,0,0
+}
+//—————————————————————————————— Gleeful ——————————————————————————————
+surface4
+{	
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1100.png,0,0 
+	element2,overlay,surface2020.png,0,0
+//	element3,overlay,surface3002.png,0,0
+	element4,overlay,surface4004.png,0,0
+	
+	//Brow Raise Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1101,0,0,0
+	animation0.pattern2,overlay,1102,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+		
+	//Brow Raise Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2021,0,0,0
+	animation2.pattern1,overlay,2022,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2023,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2023,0,0,0
+	animation4.pattern1,overlay,2022,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+}
+
+//—————————————————————————————— Hype ——————————————————————————————
+surface5
+{	
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1050.png,0,0 
+	element2,overlay,surface2050.png,0,0
+	element3,overlay,surface3005.png,0,0
+	element4,overlay,surface4003.png,0,0
+
+	//Sad Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1051,0,0,0
+	animation0.pattern2,overlay,1052,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+	
+	
+	//Sad Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2051,0,0,0
+	animation2.pattern1,overlay,2052,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2053,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2053,0,0,0
+	animation4.pattern1,overlay,2052,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+}
+
+//—————————————————————————————— Silly ——————————————————————————————
+surface6
+{	
+
+
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface1020.png,0,0 
+	element2,overlay,surface2020.png,0,0
+	element3,overlay,surface3002.png,0,0
+	
+	//Brow Raise Blink
+	animation0.interval,random,4
+	animation0.pattern1,overlay,1021,0,0,0
+	animation0.pattern2,overlay,1022,100,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+		
+	//Brow Raise Talk
+	animation1.interval,talk,4
+	animation1.pattern0,alternativestart,(2,3,4)
+	
+	animation2.interval,never
+	animation2.pattern0,overlay,2021,0,0,0
+	animation2.pattern1,overlay,2022,100,0,0
+	animation2.pattern2,overlay,-1,100,0,0
+	
+	animation3.interval,never
+	animation3.pattern0,overlay,2023,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,2023,0,0,0
+	animation4.pattern1,overlay,2022,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+}
+
+//Collisions for Swad. For many shells the collisions will have to be set per-surface because they'll be different, but I didn't want to waste the space here.
+
+surface.append0
+{
+	collisionex0,Head,region,Collision.png,245,210,85
+	collisionex1,Wings,region,Collision.png,178,112,0
+	collisionex2,Halo,region,Collision.png,255,243,25
+	collisionex3,Hands,region,Collision.png,255,87,25
+	collisionex4,Brooch,region,Collision.png,227,78,119
+	
+}
+
+// Arm Options
+//surface.append0-7
+//{
+//Default Leaning hand
+//100interval,never
+//100pattern0,5000,0,overlayfast,0,0
+
+//Default Relaxed Hand
+//101interval,never
+//101pattern0,5001,0,overlayfast,0,0
+
+//Shoo Hand
+//102interval,never
+//102pattern0,5002,0,overlayfast,0,0
+
+//Explain hand
+//103interval,never
+//103pattern0,5003,0,overlayfast,0,0
+
+//Face Hold Hand
+//104interval,never
+//104pattern0,5004,0,overlayfast,0,0
+
+//Tea Hand
+//105interval,never
+//105pattern0,5005,0,overlayfast,0,0
+//}
+//—————————————————————————————— Kero surfaces ——————————————————————————————
+
+
+surface10
+{
+	
+}
+
+
+//Collisions for the kero. See above note about the sakura collisions.
+
+sakura.cursor
+{
+mouseup0,Head,system:hand
+mousedown0,Head,system:hand
+mouseup1,Wings,system:hand
+mousedown1,Wings,system:no
+mouseup2,Hands,system:hand
+mousedown2,Hands,system:hand
+
+}
+
