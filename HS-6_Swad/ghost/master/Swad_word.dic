@@ -1,16 +1,33 @@
 //Envelopes/word groups can be so much more than a simple basic list! Here's an example to make you think outside the box a little. To be used with dialogues like:
 //"I spent like 3 hours at the store the other day, looking for a shirt in %(favoredcolors). I found everything but, can you believe it?"
 
+#globaldefine	{{CHAIN		{ switch CHAIN.Index {
+#globaldefine	}}CHAIN		} CHAIN.Index++ }
 
-OnStartChain
+OnStartTea
 {
 	"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
+	"I have some opinions on earl grey...\e:chain=egtea"
+	"I have a lot to share on such things, %(username)...\e:chain=btea"
 }
 
+//green tea chain
 gtea
 {{CHAIN
-	"It's not exactly my favorite, but I can appreciate it at times."
+	"Green tea is not exactly my favorite, but I can appreciate it at times."
 	"The best times to have green tea are about the morning or evening, though the latter is much debated."
 	"I typically have some if it's been a rather long and strenuous day... It's light, and only a bit fragrant."
 	"Though I prefer something more creamy and spicy, it's good to switch them around. Just to prevent one from growing tired of the same blend.\e:chain=end"
+}}CHAIN
+
+//earl grey chain
+egtea
+{{CHAIN
+	".\e:chain=end"
+}}CHAIN
+
+//black tea chain
+btea
+{{CHAIN
+	".\e:chain=end"
 }}CHAIN
