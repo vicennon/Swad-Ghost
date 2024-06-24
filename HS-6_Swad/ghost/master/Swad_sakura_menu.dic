@@ -1,7 +1,9 @@
 SakuraMenuGreetings : nonoverlap
 {
-	"Hello."
-	"How can I help you?"
+	"What is it, darling?"
+	"Yes~?"
+	"Oho?"
+	"Yes, my dear?"
 }
 
 //Because there is an all modifier here, you don't need to write -- between menu options
