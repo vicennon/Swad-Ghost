@@ -24,6 +24,29 @@ OnMouseClick
 		if reference4 == "Wings"
 		{
 			"\0\s[0]Excuse me..."
+			"\0\s[0]You shouldn't do that."
+		}
+		
+		elseif reference4 == "Halo"
+		{
+			"\0\s[0]That's not for fiddling with, dear."
+			"\0\s[0]You ought to ask first before touching, darling."						
+		}
+		
+		elseif reference4 == "Hands"
+		{
+			"\0\s[0]Trying to kiss my hand? Rather suave of you."
+			"\0\s[0]That's not necessary, darling. Just a simple hello will do.\w5 Better yet, buy me something, would you?"
+			"\0\s[0]Oh my, dear, I'm afraid we're not at that level of comfort yet."
+			"\0\s[0]You ought to ask first before touching, darling."			
+		}
+		
+		elseif reference4 == "Brooch"
+		{
+			"\0\s[0]You ought to ask first before touching, darling."			
+			"\0\s[0]Don't touch that, please."
+			"\0\s[0]That's mine."
+			"\0\s[0]Curious? You can't have it, if that's what you're wondering.\w6 I know, how cruel of me."			
 		}
 	}
 }
@@ -46,6 +69,10 @@ OnMouseMove.Sakura
 	if reference4 == "Head"
 	{
 		"\0\s[0]Petting??"
+		"\0\s[0]Are you...? Petting me? \w5Do I seem like some kind of dog to you?"
+		"\0\s[0]Dear?? Whatever are you doing?"
+		"\0\s[0]This is unnecessary, darling. Deeply unnecessary.\w5 Yet somehow pleasant."
+		"\0\s[0]./w5./w5./w5 ???"		
 	}
 	elseif reference4 == "Wings"
 	{
