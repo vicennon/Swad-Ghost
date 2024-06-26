@@ -25,9 +25,13 @@ RandomTalk : nonoverlap_pool
 	"\0\s[0]I'm bored."
 	"\0\s[0]You're still there, right?"
 	
+	//tea chain start
+	"\0\s[0]Mmm.. tea? \n%(OnStartTea)"
+
+	
 	
 	//fucking off of his own accord
-	"\0\s[0]Oh my, duty calls.\w8 Summon me when you have need,\w5 darling!\w8\w8\x\-"
-	"\0\s[0]My people need me.\w8 I take my leave.\w8\w8\x\-"
-	"\0\s[0]I enjoy your company,\w5 darling,\w5 but I really must return to my work.\w8\w8 \nIt was lovely speaking with you again.\w8\w8\x\-"
+//	"\0\s[0]Oh my, duty calls.\w8 Summon me when you have need,\w5 darling!\w8\w8\x\-"
+//	"\0\s[0]My people need me.\w8 I take my leave.\w8\w8\x\-"
+//	"\0\s[0]I enjoy your company,\w5 darling,\w5 but I really must return to my work.\w8\w8 \nIt was lovely speaking with you again.\w8\w8\x\-"
 }

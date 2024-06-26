@@ -24,7 +24,6 @@ OnMouseClick
 		if reference4 == "Wings"
 		{
 			"\0\s[0]Excuse me..."
-			"\0\s[0]This is no threat, but you ought to keep your fingers away from my wings. \w5 You will burn yourself."
 		}
 	}
 }
@@ -47,14 +46,10 @@ OnMouseMove.Sakura
 	if reference4 == "Head"
 	{
 		"\0\s[0]Petting??"
-		"\0\s[0]Are you...? Petting me?"
-		"\0\s[0]Dear?? Whatever are you doing?"
-		"\0\s[0]This is unnecessary, darling."
-		"\0\s[0]./w5./w5./w5 ???"		
 	}
 	elseif reference4 == "Wings"
 	{
-//		"\0\s[0]You'll hurt yourself if you do that."
+//		"\0\s[0]"
 	}
 	elseif reference4 == "Halo"
 	{
