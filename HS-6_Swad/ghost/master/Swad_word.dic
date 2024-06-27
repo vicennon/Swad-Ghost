@@ -9,91 +9,107 @@ OnFeelingFine
 		"(He looks sympathetic.) Could be better? \n\![*]\q[It's not that bad.,OnNotBad]\n\![*]\q[Yeah.,OnNotGood]"
 	}
 	
+	OnNotBad
+		{
+			"If you say so, darling. I'll be here when you call my name."
+			"You can always rely on me, dear. Don't hesitate to let me know your thoughts."
+			"Nothing to worry about, then."
+		}
+		
+	OnNotGood
+		{
+			"Oh dear. I pray things are better."
+			"You can always rely on me, dear. Don't hesitate to let me know your thoughts."
+			"Often times things could be, I suppose. You may speak with me any time to alleviate your worries."
+			"I'll be here if you need me, darling."
+			"Is that why you called me here? I shall do my best to cheer you up, darling."
+		}
+	
 OnFeelingGreat
-{
-	"Lovely to hear that, darling."
-	"Glad to make it better, dear!"
-	"No doubt due to my presence. Oh, did you hear that?"
-	"Of course you are, darling. You're with me~"
-	"You deserve to feel happy all the time, my dear."
-	"I hope this feeling lasts for you."	
-}	
+	{
+		"Lovely to hear that, darling."
+		"Glad to make it better, dear!"
+		"No doubt due to my presence. Oh, did you hear that?"
+		"Of course you are, darling. You're with me~"
+		"You deserve to feel happy all the time, my dear."
+		"I hope this feeling lasts for you."	
+	}	
 	
 OnFeelingShit
-{
-	"I could help with that."
-}
+	{
+		"I could help with that."
+	}
 
 OnCounterLonelyUser
-{
-	"I'm simply curious about you. Can't a new friend wonder how you're doing?"
-	"I wanted to know how you're doing."
-	"I was wondering how you feel when I'm gone."
-}
+	{
+		"I'm simply curious about you. Can't a new friend wonder how you're doing?"
+		"I wanted to know how you're doing."
+		"I was wondering how you feel when I'm gone."
+	}
 
 OnStartTea
-{
-	"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
-	"Oh, you don't want to hear me yammer on about tea. I'll go on for hours."
-	"I have some opinions on earl grey...\e:chain=egtea"
-	"I have a lot to share on such things, %(username)...\e:chain=btea"
-}
+	{
+		"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
+		"Oh, you don't want to hear me yammer on about tea. I'll go on for hours."
+		"I have some opinions on earl grey...\e:chain=egtea"
+		"I have a lot to share on such things, %(username)...\e:chain=btea"
+	}
 
 //green tea chain
 gtea
-{{CHAIN
-	"Green tea is not exactly my favorite, but I can appreciate it at times."
-	"The best times to have green tea are about the morning or evening, though the latter is much debated."
-	"When it comes to green tea specifically, I typically have some if it's been a rather long and strenuous day... It's light, and only a bit fragrant."
-	"....Though I prefer something more creamy and spicy, it's good to switch them around. Just to prevent one from growing tired of the same blend.\e:chain=end"
-}}CHAIN
+	{{CHAIN
+		"Green tea is not exactly my favorite, but I can appreciate it at times."
+		"The best times to have green tea are about the morning or evening, though the latter is much debated."
+		"When it comes to green tea specifically, I typically have some if it's been a rather long and strenuous day... It's light, and only a bit fragrant."
+		"....Though I prefer something more creamy and spicy, it's good to switch them around. Just to prevent one from growing tired of the same blend.\e:chain=end"
+	}}CHAIN
 
 //earl grey chain
 egtea
-{{CHAIN
-	"Oh, I could wax poetic about this blend for centuries. The spices, the flavor, the different variations I have tried..."
-	"What is very delightful is how well it pairs with a spot of milk. I do so love earl grey with cream and sugar."
-	"Brown sugar, especially, is delicious with earl grey!"
-	"Everything I taste is rather sweet. It's hard to discern much difference in my food when my senses take it all the same way."
-	"Yes...\w8 It makes it harder to enjoy food and drink, but on the bright side (he winks) I can eat very spicy food without batting an eye."
-	"It does burn a bit. I quite like it. Which is why I enjoy earl grey so much-it is one of the only things I can still taste over the sweetness."
-	"Ah, but don't look so sorrowful, darling. I like the sweetness. Better than tasting only sour, bitter, sadness all the time."
-	"That is the length of my affections for earl grey.\e:chain=end"
-}}CHAIN
+	{{CHAIN
+		"Oh, I could wax poetic about this blend for centuries. The spices, the flavor, the different variations I have tried..."
+		"What is very delightful is how well it pairs with a spot of milk. I do so love earl grey with cream and sugar."
+		"Brown sugar, especially, is delicious with earl grey!"
+		"Everything I taste is rather sweet. It's hard to discern much difference in my food when my senses take it all the same way."
+		"Yes...\w8 It makes it harder to enjoy food and drink, but on the bright side (he winks) I can eat very spicy food without batting an eye."
+		"It does burn a bit. I quite like it. Which is why I enjoy earl grey so much-it is one of the only things I can still taste over the sweetness."
+		"Ah, but don't look so sorrowful, darling. I like the sweetness. Better than tasting only sour, bitter, sadness all the time."
+		"That is the length of my affections for earl grey.\e:chain=end"
+	}}CHAIN
 
 //black tea chain
 btea
-{{CHAIN
-	"Hmm. Well, it is in league with classics like earl grey."
-	"It isn't quite as delicious as the former with cream, but it certainly provides an excellent companion to citrus."
-	"I have tried an iced version of black tea with lemon juice. Delightful."
-	"I would typically drink my tea hot, however. It always ends up that way regardless of how cold it is made by ice."
-	"Why? Oh, I suppose you would not be able to feel the heat from my presence like this. I am constantly radiating energy."
-	"It tends to ruin ice cream."
-	"But black tea is alright. I most prefer it with lemon juice or lemon tart. Otherwise, I won't have it. My cute little worshipers know better."
-	"You know my opinions on black tea, now.\e:chain=end"
-}}CHAIN
+	{{CHAIN
+		"Hmm. Well, it is in league with classics like earl grey."
+		"It isn't quite as delicious as the former with cream, but it certainly provides an excellent companion to citrus."
+		"I have tried an iced version of black tea with lemon juice. Delightful."
+		"I would typically drink my tea hot, however. It always ends up that way regardless of how cold it is made by ice."
+		"Why? Oh, I suppose you would not be able to feel the heat from my presence like this. I am constantly radiating energy."
+		"It tends to ruin ice cream."
+		"But black tea is alright. I most prefer it with lemon juice or lemon tart. Otherwise, I won't have it. My cute little worshipers know better."
+		"You know my opinions on black tea, now.\e:chain=end"
+	}}CHAIN
 
 
 OnStartRambling
-{
-	"It was this ambassador of some random kingdom I can't be bothered to recall right now...\e:chain=ambassador"
-}
+	{
+		"It was this ambassador of some random kingdom I can't be bothered to recall right now...\e:chain=ambassador"
+	}
 
 ambassador
-{{CHAIN
-	"He was ridiculously audacious. Absolutely out of his field."
-	"He would demand that I tend to his every need.\w5 Of course, as a good host, that is my duty... \w6but asking for a white peacock is rather much for a simple guest."
-	"Oh, pardon me. Did I say simple guest? I meant 'esteemed' guest. Ahem."
-	"Really though, darling. And he wanted for the most expensive tea we had. Outright asked for it.\w6 Audacious."
-	"I have hosted many events with entitled individuals, but this one particularly stood out to me."
-	"He was not even as cute as his portrait."
-	"Did I mention that his kingdom sent me his painting? In the vast arrangement of the gifts they gave me."
-	"Why, I could misinterpret the portrait as an invitation to marry. As if this ambassador were as important as a prince."
-	"They know that I am far beyond his station, yet could not bother to actually send a painting of their actual royals."
-	"Of course I wouldn't have taken him if he were a royal, goodness, no. \w6He was a spoiled brat.\w8 It is truly some wonder that he survived his trip to my palace without somebody hand feeding him grapes."
-	"Oh, you would not let that get back to them, would you? You're my confidant, darling. My little home away from home."
-	"It isn't as if they would believe you over me, anyway. Worry not."
-	"Wondering what happened to him?\w8 Oh, darling. You don't need to know about that. He's out of the picture now."
-	"Are you worried he might be an obstacle? How very thoughtful of you. I won't be bothered by him anymore.\e:chain=end"
-}}CHAIN
+	{{CHAIN
+		"He was ridiculously audacious. Absolutely out of his field."
+		"He would demand that I tend to his every need.\w5 Of course, as a good host, that is my duty... \w6but asking for a white peacock is rather much for a simple guest."
+		"Oh, pardon me. Did I say simple guest? I meant 'esteemed' guest. Ahem."
+		"Really though, darling. And he wanted for the most expensive tea we had. Outright asked for it.\w6 Audacious."
+		"I have hosted many events with entitled individuals, but this one particularly stood out to me."
+		"He was not even as cute as his portrait."
+		"Did I mention that his kingdom sent me his painting? In the vast arrangement of the gifts they gave me."
+		"Why, I could misinterpret the portrait as an invitation to marry. As if this ambassador were as important as a prince."
+		"They know that I am far beyond his station, yet could not bother to actually send a painting of their actual royals."
+		"Of course I wouldn't have taken him if he were a royal, goodness, no. \w6He was a spoiled brat.\w8 It is truly some wonder that he survived his trip to my palace without somebody hand feeding him grapes."
+		"Oh, you would not let that get back to them, would you? You're my confidant, darling. My little home away from home."
+		"It isn't as if they would believe you over me, anyway. Worry not."
+		"Wondering what happened to him?\w8 Oh, darling. You don't need to know about that. He's out of the picture now."
+		"Are you worried he might be an obstacle? How very thoughtful of you. I won't be bothered by him anymore.\e:chain=end"
+	}}CHAIN
