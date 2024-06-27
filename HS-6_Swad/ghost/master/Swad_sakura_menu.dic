@@ -4,6 +4,9 @@ SakuraMenuGreetings : nonoverlap
 	"Yes~?"
 	"Oho?"
 	"Yes, my dear?"
+	"Gracing me with your presence, now?"
+	"Whatever you desire, my darling."
+	"I am at your service, dear."
 }
 
 //Because there is an all modifier here, you don't need to write -- between menu options
@@ -15,7 +18,7 @@ OnSakuraMenu : all
 	"\n\n\_q"
 	
 	"\![*]\q[Talk to me,OnAiTalk]"
-	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
+	if LastTalk != ""; "  \![*]\q[Could you please say that again?,OnLastTalk]"
 	"\n\n"
 	
 	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
