@@ -19,7 +19,7 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[0]How are you feeling today, darling? \n\![*]\q[Great,OnFeelingGreat] \n\![*]\q[Fine,OnFeelingFine] \n\![*]\q[Terrible,OnFeelingShit]"
 	
-	"\0\s[0]You seem to sit here for quite some time. \xTell me...\w5 Do you happen to get lonely? \n\w8\![*]\q[Yes,OnLonelyUser]\n\q\![*]\q[No,OnFineUser]\n\![*]\q[Why do you ask?,OnCounterLonelyUser]"
+	"\0\s[0]You seem to sit here for quite some time. \xTell me...\w5 Do you happen to get lonely? \n\w8\![*]\q[Yes,OnLonelyUser]\n\![*]\q[No,OnNotLonelyUser]\n\![*]\q[Why do you ask?,OnCounterLonelyUser]"
 	
 	"\0\s[0]Darling, I have had just the most eventful day... \n%(OnStartRambling)"
 	
