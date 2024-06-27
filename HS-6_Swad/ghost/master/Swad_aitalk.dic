@@ -38,7 +38,7 @@ RandomTalk : nonoverlap_pool
 	
 	
 	//tea chain start
-	"\0\s[0]You seem to sit here for quite some time. \x\c\Tell me...\w5 Do you happen to get lonely? \x\n\w8\![*]\q[How often?,OnLonelyUser]\n\w8\![*]\q[Is it lonely?,OnBlueLonely]"
+	//"\0\s[0]You seem to sit here for quite some time. \x\c\Tell me...\w5 Do you happen to get lonely? \x\n\w8\![*]\q[How often?,OnLonelyUser]\n\w8\![*]\q[Is it lonely?,OnBlueLonely]"
 	
 	"\0\s[0]Mmm.. tea? \n%(OnStartTea)"
 

@@ -1,7 +1,7 @@
 charset,OSNative
 file,.gitattributes05bdb783ee6514c8c072e47680af8ff7size=66date=2024-03-06T01:54:52
 file,.gitignore6d2bf1f69d7e6186343bc85f90126d05size=98date=2024-03-06T01:54:52
-file,ghost/master/Swad_aitalk.dic182f39feaef03f86aba3fee26927db62size=2083date=2024-06-26T19:30:39
+file,ghost/master/Swad_aitalk.dic0bb8ee5db0564d6cd6063d931219553asize=2085date=2024-06-26T19:35:01
 file,ghost/master/Swad_boot.dicf3ab140d2d54ce519dc6f9ea1ad17899size=2666date=2024-06-26T18:42:53
 file,ghost/master/Swad_kero_menu.dic8ed124c0eb6bfb7cb570eb4bf9f99314size=1089date=2024-06-20T16:29:04
 file,ghost/master/Swad_meta.dic2b5b74ccc7d3808709475f1570d927b9size=6010date=2024-06-20T16:29:04
