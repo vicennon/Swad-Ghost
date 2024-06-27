@@ -24,6 +24,14 @@ RandomTalk : nonoverlap_pool
 	"\0\s[0]%(username)? Can you still hear me?"
 	"\0\s[0]I'm bored."
 	"\0\s[0]You're still there, right?"
+	"\0\s[0]You're not ignoring me, are you?"
+	"\0\s[0]Whatever is more important than me right now?"
+	"\0\s[0]You wouldn't call me just to ignore me, darling."
+	"\0\s[0]You seem rather enraptured by whatever it is you're doing."	
+	"\0\s[0](Loud sigh.)"
+	"\0\s[0]Darling, please chat with me. I am dreadfully bored."	
+	"\0\s[0](He clicks quietly. He refuses to look at you.)"	
+	
 	
 	//tea chain start
 	"\0\s[0]Mmm.. tea? \n%(OnStartTea)"
