@@ -7,6 +7,7 @@
 OnStartTea
 {
 	"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
+	"Oh, you don't want to hear me yammer on about tea. I'll go on for hours."
 	"I have some opinions on earl grey...\e:chain=egtea"
 	"I have a lot to share on such things, %(username)...\e:chain=btea"
 }
@@ -23,11 +24,35 @@ gtea
 //earl grey chain
 egtea
 {{CHAIN
-	".\e:chain=end"
+	"That is the length of my affections for earl grey.\e:chain=end"
 }}CHAIN
 
 //black tea chain
 btea
 {{CHAIN
-	".\e:chain=end"
+	"You know my opinions on black tea, now.\e:chain=end"
+}}CHAIN
+
+
+OnStartRambling
+{
+	"It was this ambassador of some random kingdom I can't be bothered to recall right now...\e:chain=ambassador"
+}
+
+ambassador
+{{CHAIN
+	"He was ridiculously audacious. Absolutely out of his field."
+	"He would demand that I tend to his every need.\w5 Of course, as a good host, that is my duty... \w6but asking for a white peacock is rather much for a simple guest."
+	"Oh, pardon me. Did I say simple guest? I meant 'esteemed' guest. Ahem."
+	"Really though, darling. And he wanted for the most expensive tea we had. Outright asked for it.\w6 Audacious."
+	"I have hosted many events with entitled individuals, but this one particularly stood out to me."
+	"He was not even as cute as his portrait."
+	"Did I mention that his kingdom sent me his painting? In the vast arrangement of the gifts they gave me."
+	"Why, I could misinterpret the portrait as an invitation to marry. As if this ambassador were as important as a prince."
+	"They know that I am far beyond his station, yet could not bother to actually send a painting of their actual royals."
+	"Of course I wouldn't have taken him if he were a royal, goodness, no. \w6He was a spoiled brat.\w8 It is truly some wonder that he survived his trip to my palace without somebody hand feeding him grapes."
+	"Oh, you would not let that get back to them, would you? You're my confidant, darling. My little home away from home."
+	"It isn't as if they would believe you over me, anyway. Worry not."
+	"Wondering what happened to him?\w8 Oh, darling. You don't need to know about that. He's out of the picture now."
+	"Are you worried he might be an obstacle? How very thoughtful of you. I won't be bothered by him anymore.\e:chain=end"
 }}CHAIN
