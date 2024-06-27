@@ -4,6 +4,33 @@
 #globaldefine	{{CHAIN		{ switch CHAIN.Index {
 #globaldefine	}}CHAIN		} CHAIN.Index++ }
 
+OnFeelingFine
+	{
+		"(He looks sympathetic.) Could be better? \n\![*]\q[It's not that bad.,OnNotBad]\n\![*]\q[Yeah.,OnNotGood]"
+	}
+	
+OnFeelingGreat
+{
+	"Lovely to hear that, darling."
+	"Glad to make it better, dear!"
+	"No doubt due to my presence. Oh, did you hear that?"
+	"Of course you are, darling. You're with me~"
+	"You deserve to feel happy all the time, my dear."
+	"I hope this feeling lasts for you."	
+}	
+	
+OnFeelingShit
+{
+	"I could help with that."
+}
+
+OnCounterLonelyUser
+{
+	"I'm simply curious about you. Can't a new friend wonder how you're doing?"
+	"I wanted to know how you're doing."
+	"I was wondering how you feel when I'm gone."
+}
+
 OnStartTea
 {
 	"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
@@ -24,12 +51,26 @@ gtea
 //earl grey chain
 egtea
 {{CHAIN
+	"Oh, I could wax poetic about this blend for centuries. The spices, the flavor, the different variations I have tried..."
+	"What is very delightful is how well it pairs with a spot of milk. I do so love earl grey with cream and sugar."
+	"Brown sugar, especially, is delicious with earl grey!"
+	"Everything I taste is rather sweet. It's hard to discern much difference in my food when my senses take it all the same way."
+	"Yes...\w8 It makes it harder to enjoy food and drink, but on the bright side (he winks) I can eat very spicy food without batting an eye."
+	"It does burn a bit. I quite like it. Which is why I enjoy earl grey so much-it is one of the only things I can still taste over the sweetness."
+	"Ah, but don't look so sorrowful, darling. I like the sweetness. Better than tasting only sour, bitter, sadness all the time."
 	"That is the length of my affections for earl grey.\e:chain=end"
 }}CHAIN
 
 //black tea chain
 btea
 {{CHAIN
+	"Hmm. Well, it is in league with classics like earl grey."
+	"It isn't quite as delicious as the former with cream, but it certainly provides an excellent companion to citrus."
+	"I have tried an iced version of black tea with lemon juice. Delightful."
+	"I would typically drink my tea hot, however. It always ends up that way regardless of how cold it is made by ice."
+	"Why? Oh, I suppose you would not be able to feel the heat from my presence like this. I am constantly radiating energy."
+	"It tends to ruin ice cream."
+	"But black tea is alright. I most prefer it with lemon juice or lemon tart. Otherwise, I won't have it. My cute little worshipers know better."
 	"You know my opinions on black tea, now.\e:chain=end"
 }}CHAIN
 
