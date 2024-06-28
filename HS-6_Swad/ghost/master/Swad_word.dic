@@ -4,6 +4,88 @@
 #globaldefine	{{CHAIN		{ switch CHAIN.Index {
 #globaldefine	}}CHAIN		} CHAIN.Index++ }
 
+appearanceadj
+{
+	"lovely"
+	"gorgeous"
+	"beautiful"
+	"handsome"
+	"dashing"
+	"debonaire"
+	"awe-striking"
+	"brilliant"
+	"stunning"
+}
+
+papersnoun
+{
+	"papers"
+	"reports"
+	"fan letters"
+	"fan essays"
+	"fanatic writings"
+	"crazed letters"
+	"documents"
+	"boring, stuffy documents"
+	"marriage proposals"
+	"marriage schemes"
+	"murder schemes"
+	"murder plots"
+	"political schemes"
+	"political marriage plots"
+	"unfinished fanfics about myself"
+	"romantic fanfics about myself"
+	"raunchy fanfics about myself. They are always the same"
+	"'x reader' fanfics about myself. They make me seem so much more terrifying than I am"
+	"fanfics"
+	"mystery novels"
+	"slow burn fanfics about my brother. I cannot seem to get to the good part.."
+	"romantic fanfics about my brother. I keep on finding the same ones.."
+	"romance novels"
+	"soap operas"
+}
+
+OnSwadLikerUser
+{
+	"Why thank you, I already know!"
+	"Oho, that is all I need to hear!"
+	"Of course I do, I'm the best!"
+	"Why thank you!"
+	"(He giggles and blushes.)"
+	"(He giggles and kicks his feet.)"
+	"(He flutters his eyelashes at you.)"
+	"(He blows a kiss at you.)"
+}
+
+OnSwadNeutralUser
+{
+	"Somehow, this is worse than looking bad."
+	"Ohoho, playing hard to get, are we?"
+	"Better than terrible, I suppose...?"
+	"(He flutters his eyelashes at you.)"
+	"(He blows a kiss at you.)"
+}
+
+OnSwadHaterUser
+{
+	":C"
+	"(He droops like a wilting flower.)"
+	"I shall never ask you again..."
+	"How deeply rude of you to say..."
+	"Is that true? Is it so terrible that you must inform me...?"
+	"Well, I never! I shall take my leave now. \w5Goodbye! \w5Farewell!\x\-1"
+}
+
+OnTeaLiker
+	{
+		"If only I could send it to you!"
+	}
+	
+OnTeaHater
+	{
+		"That so? I'll send it to someone else, then."
+	}
+
 OnFeelingFine
 	{
 		"(He looks sympathetic.) Could be better? \n\![*]\q[It's not that bad.,OnNotBad]\n\![*]\q[Yeah.,OnNotGood]"
