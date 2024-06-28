@@ -29,19 +29,22 @@ OnSakuraMenu : all
 OnActMenu : all
 {
 	"\0\s[6]What is it, my dear?\n\n"
-    "\_q(You want to...)\_q\n"
-	"\![*]\q[OBSERVE,OnObserve], \n"
-	"\![*]\q[ITEM,OnGift]\n"
+    "\_q(You want...)\_q\n"
+	"\![*]\q[some SUPPORT,OnEncouragement]"
+	"\![*]\q[to OBSERVE,OnObserve], \n"
+	"\![*]\q[offer a GIFT,OnGift]\n"
 }
 
-OnObserve
+OnObserve : all
 {
-	
+	"\0\s[5]What are you staring at?"
 }
 
-OnObserve
+OnGift: all
 {
-	
+	/*"\_q(You want to give him...)\_q\n"
+	"\![*]\q[,], \n"
+	"\![*]\q[,]\n"*/
 }
 
 OnAskMenu : all

@@ -55,6 +55,7 @@ RandomTalk : nonoverlap_pool
 	"\0\s[1]Side-tracked again, darling~?"
 	"\0\s[4]Head in the clouds, my dear~?"
 	"\0\s[0]You are doing lovely, darling."
+	"\0\s[0]%(encouragementphrase)"
 	
 	"\0\s[0]Have you had any %(drinknoun) recently?"
 	"\0\s[0]Have you had any food to nibble on recently?"	

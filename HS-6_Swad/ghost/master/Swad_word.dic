@@ -111,11 +111,38 @@ OnSwadHaterUser
 	"\0\s[3]Well, I never! I shall take my leave now. \w5Goodbye! \w5Farewell!\x\-1"
 }
 
+OnEncouragement
+{
+	"%(encouragementphrase)"
+}
+
 encouragementphrase
 {
 	"You are doing so well right now."
-	"Doing your best is enough. Do not push yourself so hard, my darling."
-	""
+	"Doing your best is enough."
+	"Do not push yourself so hard, my darling."
+	"Lovely job so far, my dear."
+	"Of course, you're doing amazing!"
+	"You are so very %(appearanceadj)."
+	"You have gotten very much done today, even if you do not feel like it."
+	"You deserve to rest, darling."
+	"You deserve the world, my dear."
+	"You have been working very hard, and it is easy for me to see that. I think you are doing a lovely job."
+	"Life can be very stressful, my darling. It is hard to stay positive in these times...\xBut you are being so strong for me. You deserve to rest when you can."
+	"Stay positive, my dear."
+	"You can do whatever you put your mind to, dear."
+	"I will always be cheering you on, darling."
+	"Your hard work will pay off, dear."
+	"Just a little further, and you will be done!"
+	"Baby steps, my dear. You will make it to the end, I am sure of it."
+	"I believe in you."
+	"I have faith in your abilities."
+	"We fail when we stop trying, my dear. Do not let your insecurity stop you from doing what you love."
+	"When it feels like the world is against you... I am here. I know that is not true.\xYou are loved."
+	"You are not alone, my dear. I will keep you company when you have need of me."
+	"You are doing so good for me."
+	"Have you always been this stunning?"
+	"I know you can do it."
 }
 
 OnTeaLiker
