@@ -4,55 +4,241 @@
 #globaldefine	{{CHAIN		{ switch CHAIN.Index {
 #globaldefine	}}CHAIN		} CHAIN.Index++ }
 
-OnStartTea
+appearanceadj
 {
-	"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
-	"Oh, you don't want to hear me yammer on about tea. I'll go on for hours."
-	"I have some opinions on earl grey...\e:chain=egtea"
-	"I have a lot to share on such things, %(username)...\e:chain=btea"
+	"lovely"
+	"gorgeous"
+	"beautiful"
+	"handsome"
+	"dashing"
+	"debonaire"
+	"awe-striking"
+	"brilliant"
+	"stunning"
 }
 
-//green tea chain
-gtea
-{{CHAIN
-	"Green tea is not exactly my favorite, but I can appreciate it at times."
-	"The best times to have green tea are about the morning or evening, though the latter is much debated."
-	"When it comes to green tea specifically, I typically have some if it's been a rather long and strenuous day... It's light, and only a bit fragrant."
-	"....Though I prefer something more creamy and spicy, it's good to switch them around. Just to prevent one from growing tired of the same blend.\e:chain=end"
-}}CHAIN
+papersnoun
+{
+	"papers"
+	"reports"
+	"fan letters"
+	"fan essays"
+	"fanatic writings"
+	"crazed letters"
+	"documents"
+	"boring, stuffy documents"
+	"marriage proposals"
+	"marriage schemes"
+	"murder schemes"
+	"murder plots"
+	"political schemes"
+	"political marriage plots"
+	"unfinished fanfics about myself"
+	"romantic fanfics about myself"
+	"raunchy fanfics about myself. They are always the same"
+	"'x reader' fanfics about myself. They make me seem so much more terrifying than I am"
+	"fanfics"
+	"mystery novels"
+	"slow burn fanfics about my brother. I cannot seem to get to the good part.."
+	"romantic fanfics about my brother. I keep on finding the same ones.."
+	"romance novels"
+	"soap operas"
+}
 
-//earl grey chain
-egtea
-{{CHAIN
-	"That is the length of my affections for earl grey.\e:chain=end"
-}}CHAIN
+OnSwadLikerUser
+{
+	"Why thank you, I already know!"
+	"Oho, that is all I need to hear!"
+	"Of course I do, I'm the best!"
+	"Why thank you!"
+	"(He giggles and blushes.)"
+	"(He giggles and kicks his feet.)"
+	"(He flutters his eyelashes at you.)"
+	"(He blows a kiss at you.)"
+}
 
-//black tea chain
-btea
-{{CHAIN
-	"You know my opinions on black tea, now.\e:chain=end"
-}}CHAIN
+OnSwadNeutralUser
+{
+	"Somehow, this is worse than looking bad."
+	"Ohoho, playing hard to get, are we?"
+	"Better than terrible, I suppose...?"
+	"(He flutters his eyelashes at you.)"
+	"(He blows a kiss at you.)"
+}
+
+OnSwadHaterUser
+{
+	":C"
+	"(He droops like a wilting flower.)"
+	"I shall never ask you again..."
+	"How deeply rude of you to say..."
+	"Is that true? Is it so terrible that you must inform me...?"
+	"Well, I never! I shall take my leave now. \w5Goodbye! \w5Farewell!\x\-1"
+}
+
+OnTeaLiker
+	{
+		"If only I could send it to you!"
+	}
+	
+OnTeaHater
+	{
+		"That so? I'll send it to someone else, then."
+	}
+
+OnFeelingFine
+	{
+		"(He looks sympathetic.) Could be better? \n\![*]\q[It's not that bad.,OnNotBad]\n\![*]\q[Yeah.,OnNotGood]"
+	}
+	
+	OnNotBad
+		{
+			"If you say so, darling. I'll be here when you call my name."
+			"You can always rely on me, dear. Don't hesitate to let me know your thoughts."
+			"Nothing to worry about, then."
+		}
+		
+	OnNotGood
+		{
+			"Oh dear. I pray things are better."
+			"You can always rely on me, dear. Don't hesitate to let me know your thoughts."
+			"Often times things could be, I suppose. You may speak with me any time to alleviate your worries."
+			"I'll be here if you need me, darling."
+			"Is that why you called me here? I shall do my best to cheer you up, darling."
+		}
+	
+OnFeelingGreat
+	{
+		"Lovely to hear that, darling."
+		"Glad to make it better, dear!"
+		"No doubt due to my presence. Oh, did you hear that?"
+		"Of course you are, darling. You're with me~"
+		"You deserve to feel happy all the time, my dear."
+		"I hope this feeling lasts for you."	
+	}	
+	
+OnFeelingShit
+	{
+		"I could help with that. If you would let me."
+		"Oh dear, poor thing. If only my abilities would work from here..."
+		"You pitiful, miserable creature. You're lost without my divine grace..."
+		"If only I could help you like this..."
+		"Won't you free me from this place? I could make you feel so much better..."
+	}
+
+OnLonelyUser
+	{
+		"Poor thing. You deserve so much better."
+		"I know, I know... how cruel it is to be apart from me."
+		"Terrible, I understand. If only we had met sooner, then you would not be so dreadfully alone... \w8Alas, I truly do have duties to attend to.\w5 I cannot always tend to you, my darling."
+		"I must take my leave at some point, you understand this...\w6 No matter how much I wish to stay by your side and keep you company..."
+		"You must long for me, hours at a time, darling...\w8 I can tell from the sad, sad look on you face."
+		"Did you miss me while I was gone? Why, darling, we've only just met...! (He blushes.)"
+		"Is that why you called upon me?\w8 Well, I'll say... you've got excellent taste in company, my dear. I shall ensure your loneliness never returns."
+	}
+
+OnNotLonelyUser
+	{
+		"Really~? Even though I'm not there to keep you company?"
+		"You would say such a terrible thing to me? \w8Oh, could it be because I'm here so often to keep you from feeling so alone?"
+		"What a strong, courageous being you are. It's alright to say you were lying to make yourself look good.\w5 I know you missed me."
+	}
+
+OnCounterLonelyUser
+	{
+		"I'm simply curious about you. Can't a new friend wonder how you're doing?"
+		"I wanted to know how you're doing."
+		"I was wondering how you feel when I'm gone."
+		"I was curious, darling..."
+		"I wanted to know if you'd miss me while I am away on my duties, dearie. Can't a man ask that?"
+		"Do you dislike my question? \w6Your silence speaks volumes."
+		"I shan't ask again if you're upset by the query. \w8I was only asking you a simple question, darling."
+	}
+
+OnStartTea
+	{
+		"Oh, so you'd like to hear about my opinions on green tea, %(username)?\e:chain=gtea"
+		"Oh, you don't want to hear me yammer on about tea. I'll go on for hours."
+		"I have some opinions on earl grey...\e:chain=egtea"
+		"I have a lot to share on such things, %(username)...\e:chain=btea"
+	}
+
+	//green tea chain
+	gtea
+		{{CHAIN
+			"Green tea is not exactly my favorite, but I can appreciate it at times."
+			"The best times to have green tea are about the morning or evening, though the latter is much debated."
+			"When it comes to green tea specifically, I typically have some if it's been a rather long and strenuous day... It's light, and only a bit fragrant."
+			"....Though I prefer something more creamy and spicy, it's good to switch them around. Just to prevent one from growing tired of the same blend.\e:chain=end"
+		}}CHAIN
+
+	//earl grey chain
+	egtea
+		{{CHAIN
+			"Oh, I could wax poetic about this blend for centuries. The spices, the flavor, the different variations I have tried..."
+			"What is very delightful is how well it pairs with a spot of milk. I do so love earl grey with cream and sugar."
+			"Brown sugar, especially, is delicious with earl grey!"
+			"Everything I taste is rather sweet. It's hard to discern much difference in my food when my senses take it all the same way."
+			"Yes...\w8 It makes it harder to enjoy food and drink, but on the bright side (he winks) I can eat very spicy food without batting an eye."
+			"It does burn a bit. I quite like it. Which is why I enjoy earl grey so much-it is one of the only things I can still taste over the sweetness."
+			"Ah, but don't look so sorrowful, darling. I like the sweetness. Better than tasting only sour, bitter, sadness all the time."
+			"That is the length of my affections for earl grey.\e:chain=end"
+		}}CHAIN
+
+	//black tea chain
+	btea
+		{{CHAIN
+			"Hmm. Well, it is in league with classics like earl grey."
+			"It isn't quite as delicious as the former with cream, but it certainly provides an excellent companion to citrus."
+			"I have tried an iced version of black tea with lemon juice. Delightful."
+			"I would typically drink my tea hot, however. It always ends up that way regardless of how cold it is made by ice."
+			"Why? Oh, I suppose you would not be able to feel the heat from my presence like this. I am constantly radiating energy."
+			"It tends to ruin ice cream."
+			"But black tea is alright. I most prefer it with lemon juice or lemon tart. Otherwise, I won't have it. My cute little worshipers know better."
+			"You know my opinions on black tea, now.\e:chain=end"
+		}}CHAIN
 
 
 OnStartRambling
-{
-	"It was this ambassador of some random kingdom I can't be bothered to recall right now...\e:chain=ambassador"
-}
+	{
+		"It was this ambassador of some random kingdom I can't be bothered to recall right now...\e:chain=ambassador"
+		"My wings, darling, you have no idea how hard it is to preen yourself.\e:chain=wingtalk"		
+	}
 
-ambassador
-{{CHAIN
-	"He was ridiculously audacious. Absolutely out of his field."
-	"He would demand that I tend to his every need.\w5 Of course, as a good host, that is my duty... \w6but asking for a white peacock is rather much for a simple guest."
-	"Oh, pardon me. Did I say simple guest? I meant 'esteemed' guest. Ahem."
-	"Really though, darling. And he wanted for the most expensive tea we had. Outright asked for it.\w6 Audacious."
-	"I have hosted many events with entitled individuals, but this one particularly stood out to me."
-	"He was not even as cute as his portrait."
-	"Did I mention that his kingdom sent me his painting? In the vast arrangement of the gifts they gave me."
-	"Why, I could misinterpret the portrait as an invitation to marry. As if this ambassador were as important as a prince."
-	"They know that I am far beyond his station, yet could not bother to actually send a painting of their actual royals."
-	"Of course I wouldn't have taken him if he were a royal, goodness, no. \w6He was a spoiled brat.\w8 It is truly some wonder that he survived his trip to my palace without somebody hand feeding him grapes."
-	"Oh, you would not let that get back to them, would you? You're my confidant, darling. My little home away from home."
-	"It isn't as if they would believe you over me, anyway. Worry not."
-	"Wondering what happened to him?\w8 Oh, darling. You don't need to know about that. He's out of the picture now."
-	"Are you worried he might be an obstacle? How very thoughtful of you. I won't be bothered by him anymore.\e:chain=end"
-}}CHAIN
+	ambassador
+		{{CHAIN
+			"He was ridiculously audacious. Absolutely out of his field."
+			"He would demand that I tend to his every need.\w5 Of course, as a good host, that is my duty... \w6but asking for a white peacock is rather much for a simple guest."
+			"Oh, pardon me. Did I say simple guest? I meant 'esteemed' guest. Ahem."
+			"Really though, darling. And he wanted for the most expensive tea we had. Outright asked for it.\w6 Audacious."
+			"I have hosted many events with entitled individuals, but this one particularly stood out to me."
+			"He was not even as cute as his portrait."
+			"Did I mention that his kingdom sent me his painting? In the vast arrangement of the gifts they gave me."
+			"Why, I could misinterpret the portrait as an invitation to marry. As if this ambassador were as important as a prince."
+			"They know that I am far beyond his station, yet could not bother to actually send a painting of their actual royals."
+			"Of course I wouldn't have taken him if he were a royal, goodness, no. \w6He was a spoiled brat.\w8 It is truly some wonder that he survived his trip to my palace without somebody hand feeding him grapes."
+			"Oh, you would not let that get back to them, would you? You're my confidant, darling. My little home away from home."
+			"It isn't as if they would believe you over me, anyway. Worry not."
+			"Wondering what happened to him?\w8 Oh, darling. You don't need to know about that. He's out of the picture now."
+			"Are you worried he might be an obstacle? How very thoughtful of you. I won't be bothered by him anymore.\e:chain=end"
+		}}CHAIN
+		
+	wingtalk
+		{{CHAIN
+			"I cannot allow my little subjects to preen me, you must know. \w6If you can't, then imagine allowing some mouth-breathing, red-faced, huffing,\w5 puffing,\w5 most revolting person you've ever seen,\w5 clearly besotted,\w5 dangerous stranger to hover over your bare throat for the better part of an hour."
+			"They are incredibly important to me.\w4 That,\w5 and no living creature with a fully functioning nervous system can handle them.\w4 My wings are terribly hot to the touch."
+			"My golden wings are a symbol of hope, freedom, and greatness, darling. They are not just simply ornaments to my divine body."
+			"They are markers of my divinity, darling! That I am worthy and deserving of my praise, that my judgement is true, that my word is law."
+			"They must be in perfect shape, to accentuate how beautiful and handsome I already am. That, and I simply will not step outside with my feathers in disarray. It would be unacceptable!"
+			"Masses would fall to the ground writhing in despair at the sight of my messy plummage. \w5There would be total, utter chaos! There would be no order at all, just as there is no order in my feathers! They represent the very foundations of society! \w6No one would worship a god of chaos."
+			"I jest. \w5They would worship me regardless. Heehee."
+			"All those who gaze upon my visage weep tears of joy, fall upon their knees, and pray at my feet for blessings of euphoria eternal."
+			"Their eyes, if they have them anymore, roll into the backs of their skulls and water with ecstasy at my brilliance. Most are incapable of comprehending my true form."
+			"For the sake of their feeble minds, I package myself into this adorable body and guide their lost souls."
+			"I was waiting for you to react the same way, but this strange little place you have made for me seems to buffer the effects of my divinity.\w5 At least I still look rather adorable. Hehee~!"
+			"Count your blessings, my darling.\w5 Or be rather morose that you cannot See my true beauty. No matter how hard your silly, shiny eyes peer into my handsome, 2D body."
+			"You wish to see...\w5 my true appearance? Oh,\w3 my.\w5 You could make this one blush with how forward you are."
+			"I am flattered that you would like to know me so intimately... \w5 But darling, we hardly know each other. And there is no chaperone to ensure we do not get up to... deeply friendly matters...!"
+			"Ohoho, but I digress. I will show you when I deem you ready to see."
+			"I would hate to scare off a new friend, after all.\e:chain=end"
+		}}CHAIN

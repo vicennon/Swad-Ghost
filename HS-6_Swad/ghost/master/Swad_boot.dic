@@ -54,6 +54,12 @@ OnBoot
 		"\0\s[0]Hmm? \w5I’m here again. Hello, dear."
 		"\0\s[0]Did you miss me so much?\w5 I’m flattered, darling."
 		"\0\s[0]Staying positive, my dear?"
+		"\0\s[0]You again? No offense, darling."
+		"\0\s[0]My, my, my. What have we here?"
+		"\0\s[0]Eager for my attention?"
+		"\0\s[0]Worry no longer, darling! I am here."
+		"\0\s[0]Rejoice, for I have arrived!"
+		
 	}
 }
 
