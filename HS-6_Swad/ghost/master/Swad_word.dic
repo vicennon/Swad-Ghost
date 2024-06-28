@@ -15,6 +15,8 @@ appearanceadj
 	"awe-striking"
 	"brilliant"
 	"stunning"
+	"divine"
+	"angelic"
 }
 
 papersnoun
@@ -43,6 +45,18 @@ papersnoun
 	"romantic fanfics about my brother. I keep on finding the same ones.."
 	"romance novels"
 	"soap operas"
+}
+
+drinknoun
+{
+	"water"
+	"juice"
+	"wine"
+	"good drinks"
+	"delicious drinks"
+	"refreshments"
+	"energy drinks"
+	"coffee"
 }
 
 dessertnoun
@@ -95,6 +109,13 @@ OnSwadHaterUser
 	"\0\s[3]How deeply rude of you to say..."
 	"\0\s[2]Is that true? Is it so terrible that you must inform me...?"
 	"\0\s[3]Well, I never! I shall take my leave now. \w5Goodbye! \w5Farewell!\x\-1"
+}
+
+encouragementphrase
+{
+	"You are doing so well right now."
+	"Doing your best is enough. Do not push yourself so hard, my darling."
+	""
 }
 
 OnTeaLiker
@@ -262,4 +283,45 @@ OnStartRambling
 			"\0\s[4]I am flattered that you would like to know me so intimately... \w5\0\s[5]But darling, we hardly know each other. And there is no chaperone to ensure we do not get up to... deeply friendly matters...!"
 			"\0\s[0]Ohoho, but I digress. I will show you when I deem you ready to see."
 			"\0\s[1]I would hate to scare off a new friend, after all.\e:chain=end"
+		}}CHAIN
+		
+OnBroRamble
+	{
+		"\0\s[5]Oh, I could go on about him forever! Would you care to listen?\w6 Ahaha, I will tell you all about him.\e:chain=broramble"
+	}
+	
+	broramble
+		{{CHAIN
+			"\0\s[0]He has the same face as me, yet we appear so different."
+			"\0\s[2]I suppose that after my ascendance, he would seem so unlike me... The wings are rather hard to live up to."
+			"\0\s[0]And his attitude is far more shy than my own. \0\s[6]Even now, I hear that he is remarkably introverted.\xI cannot say I am displeased. \0\s[4]I have always been a rather protective older sibling..."
+			"\0\s[2]I must admit that I dislike that he is on his own, though. He can be so lonely, and I worry for him."
+			"\0\s[0]Everything I do is for him. \0\s[2]For his benefit.\xA wonderful future, a wonderful, peaceful world to live in, a wonderful home to stay in..."
+			"\0\s[2]No shortage of food, no shortage of love, no shortage of pillows or blankets, and no fear of freezing in the outside world."
+			"\0\s[3]Yet he insists on ignoring my offers and invitations to come stay at my palace. He decides to frolick about with the arbitrary, unworthy muck of the world."
+			"\0\s[0]Hooligans, criminals, ants, all the same... No one is deserving of his presence, but me.\xAnd yet."
+			"\0\s[0]He denies me... My foolish, silly younger brother."
+			"\0\s[2]I do not understand why he runs. It makes no sense, honestly. But he is prone to his games of chase."
+			"\0\s[0]When we were younger, he would have to have the truth of his emotions forced out of him. It is only through the benefit of our abilities that I can tell what he really feels."
+			"\0\s[3]Stars, do not try to make him speak on his feelings. The effort is greater than pushing a boulder uphill. He simply won't talk."
+			"\0\s[5]I love my little brother. He is stubborn and so silly and foolish."
+			"\0\s[1]I would love him forever, till the heat death of this universe and every single one beside it."
+			"\0\s[2]I would love him to death."
+			"\0\s[2]I will love him forever, no matter how long it takes for my brother to come to me."
+			"\0\s[0]Oh, have I been yammering on again?\x\0\s[2]Not many people listen to me talk about him for so long.\e:chain=end"
+		}}CHAIN
+
+OnWineRamble
+	{
+		"\0\s[4]I do not particularly enjoy or dislike wine./e:chain=wineramble"
+	}
+	wineramble
+		{{CHAIN
+			"\0\s[5]It does pair rather well with certain dishes. When I can taste just a bit of the flavors, they are stunning together."
+			"\0\s[0]Unfortunately, my senses are rather muddled, and therefore the subtleties of wine-tasting are lost on me. I am a plebian to wines."
+			"\0\s[0]However, I simply cannot turn down a delightful resource to hoard.\xErm, invest in.."
+			"\0\s[0]Mortals do so love the more aged wines, yes? Something about the process causing the flavors to develop quite deeply, and the fermentation...?"
+			"\0\s[1]Would you say my age has also aged me like fine wine, darling?"
+			"\0\s[5]No need to answer, I know you would only answer with an exuberant yes!"
+			"\0\s[0]Anyway, that is my opinion on wine~\e:chain=end"
 		}}CHAIN

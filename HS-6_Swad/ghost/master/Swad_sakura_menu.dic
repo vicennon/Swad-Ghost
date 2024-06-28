@@ -16,14 +16,97 @@ OnSakuraMenu : all
 	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
 	
 	"\n\n\_q"
+	"\![*]\q[ACT,OnActMenu] \n\![*]\q[ASK,OnAskMenu]"
 	
 	"\![*]\q[Talk to me,OnAiTalk]"
 	if LastTalk != ""; "  \![*]\q[Could you please say that again?,OnLastTalk]"
 	"\n\n"
 	
 	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
+	"\![*]\q[Nevermind!,blank]"	
+}
+
+OnActMenu : all
+{
+	"\0\s[6]What is it, my dear?\n\n"
+    "\_q(You want to...)\_q\n"
+	"\![*]\q[OBSERVE,OnObserve], \n"
+	"\![*]\q[ITEM,OnGift]\n"
+}
+
+OnObserve
+{
 	
-	"\![*]\q[Nevermind,blank]"	
+}
+
+OnObserve
+{
+	
+}
+
+OnAskMenu : all
+{
+	"\0\s[4] Something to say~?\n"
+	"\_q(Ask him about...)\_q\n\n"
+	"\![*]\q[Preferences,OnAskPref]"
+	"\n\![*]\q[Himself,OnAskBio]"
+	"\n\![*]\q[Family,OnAskFam]"	
+	"\n\![*]\q[Friends,OnAskFriend]"	
+//	"\n\![*]\q[Past,OnAskBio]"	
+	//![*]\q[Outfits,OnAskOutfit],
+	//"\![*]\q[ask for his brother.,OnSwanVisit], \n\![*]\q[holding his hand,OnHoldMeHand]"
+}
+
+OnAskPref : all
+{
+	"\0\s[6]My preferences? Whatever about them?"
+	"\_q(What are his preferences for...)\_q\n\n"
+	"\![*]\q[Flowers,OnPreferFlower], \![*]\q[Drinks,OnPreferDrink], \n"	
+	"\![*]\q[Touch,OnPreferTouch]"	
+}
+
+OnPreferFlower
+{
+	"\0\s[0]Roses, easily, are my favorite... But they are so typical.\xI suppose that because they are typical, it is a product of being so well-received. They are a universal symbol of love."
+	"\0\s[0]I have a small affection for irises."
+	"\0\s[4]Will you be buying me some? I am not sure how you would give them to me."
+	"\0\s[0]Very smooth of you, %(username)."
+	"\0\s[0]Oh please, I get enough of them on a daily basis. No need to add onto the pile."
+}
+
+OnPreferDrink
+{
+	"\0\s[0]About wine and such? I suppose a good chardonnay goes a long way, but truthfully...\x%(OnWineRamble)"
+	"\0\s[0]It is actually quite hard to drink things. They tend to evaporate before hitting my tongue..."
+	"\0\s[0]When I can get some, water is rather refreshing. It is one of very few things that are sweet to my senses."
+	"\0\s[0]Offering to buy me something? I wouldn't mind."
+	"\0\s[0]I enjoy a bit of apple juice from time to time."
+}
+
+OnPreferTouch
+{
+	"\0\s[3]I dislike it when people I do not know or care for touch me.\w5 Being the saintly, divine figure that I am, the disgusting masses will reach for my clothing in desperate plea for salvation.\x\0\s[4]I do not fault them. \0\s[0]I am beautiful."
+	"\0\s[0]Very simple rules. Do not touch my face, and do not touch my wings.\w6 At least without permission."
+}
+
+OnAskBio
+{
+	"\0\s[6]About \f[italics,true]meeee~?\f[italics,false] How delightful of you to ask!"
+}
+
+OnAskFam
+{
+	"\0\s[0]I have a younger brother. He is rather prickly with me, currently."
+	"\0\s[4]Ah, my baby brother... I love him very much."
+	"\0\s[1]My dear little brother Nightmare! Surely you have heard of him. \w6\0\s[2]He is rather infamous."
+	"\0\s[0]Do you refer to my brother? What is it that you need to know about him?\x%(OnBroRamble)"
+	"\0\s[0]"
+	
+}
+
+OnAskFriend
+{
+	"\0\s[0]What friends do I have?\w7 Well, there are so many I could hardly begin to list the names..."	
 }
 
 OnLastTalk

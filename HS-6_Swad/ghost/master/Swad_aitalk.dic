@@ -12,13 +12,28 @@ OnAiTalk
 }
 
 RandomTalk : nonoverlap_pool
-{
+{		
+		//fucking off of his own accord
+	//	"\0\s[0]Oh my, duty calls.\w8 Summon me when you have need,\w5 darling!\w8\w8\x\-"
+	//	"\0\s[0]My people need me.\w8 I take my leave.\w8\w8\x\-"
+	//	"\0\s[0]I enjoy your company,\w5 darling,\w5 but I really must return to my work.\w8\w8 \nIt was lovely speaking with you again.\w8\w8\x\-"
+	
+	//user interactions
+	"\0\s[0]Tell me, dear...\x Do I look %(appearanceadj) today? \n\n\![*]\q[Yes my liege,OnSwadLikerUser] \n\![*]\q[You look okay,OnSwadNeutralUser]\n\![*]\q[No you look like SHIT,OnSwadHaterUser]"
+	"\0\s[1]How are you feeling today, darling? \n\![*]\q[Great,OnFeelingGreat] \n\![*]\q[Fine,OnFeelingFine] \n\![*]\q[Terrible,OnFeelingShit]"
+	"\0\s[0]You seem to sit here for quite some time. \xTell me...\w5\0\s[2] Do you happen to get lonely? \n\w8\![*]\q[Yes,OnLonelyUser]\n\![*]\q[No,OnNotLonelyUser]\n\![*]\q[Why do you ask?,OnCounterLonelyUser]"
+	"\0\s[0]There was a new tea blend that came in the other day.\w8\n I’m not quite sure if I enjoy the scent...\w8\w8\n\n	\0\s[1] Perhaps you’d like it more. \n\n\![*]\q[Yes please,OnTeaLiker] \n\![*]\q[No thank you,OnTeaHater]"
+
+	//chain start
+	"\0\s[0]Mmm... tea? \n%(OnStartTea)"
+	"\0\s[3]Darling, I have had just the most eventful day... \n%(OnStartRambling)"
+
 	"\0\s[0]"
 	"\0\s[0]"
 	"\0\s[1]"
 	"\0\s[4]"
 	"\0\s[4]"
-	"\0\s[0]There was a new tea blend that came in the other day.\w8\n I’m not quite sure if I enjoy the scent...\w8\w8\n\n	\0\s[1] Perhaps you’d like it more. \n\n\![*]\q[Yes please,OnTeaLiker] \n\![*]\q[No thank you,OnTeaHater]"
+	
 	"\0\s[6]How exactly did you find me, anyway? You must have really wanted my attention to go to these lengths."
 	"\0\s[0]I am glad to be away from my desk for a little while. It can get so boring reading all those %(papersnoun)."
 	"\0\s[0]I wonder what else is out here."
@@ -30,23 +45,28 @@ RandomTalk : nonoverlap_pool
 	"\0\s[0]I'm feeling rather listless today. After a few centuries, you run out of things to do or think about..."
 	"\0\s[1]Have you any stories to tell me?"
 	"\0\s[1]It is so lovely to see you, my dear. A good change of scenery is always necessary."
-	"\0\s[0]I had the loveliest %(dessertnoun) today. Too bad you cannot have any."
+	"\0\s[0]I had the loveliest %(dessertnoun) today.\w5\0\s[5] Too bad you cannot have any."
+	"\0\s[4]What are you working on now, my dear? Tell me all about it."
+	"\0\s[0]Do not forget to take breaks, darling~"
+	"\0\s[4]Do not forget to take breaks, darling~"
+	"\0\s[0]Was there something you needed to do?"
+	"\0\s[1]Did you forget something~?"
+	"\0\s[1]Remembered what your task was, yet~?"
+	"\0\s[1]Side-tracked again, darling~?"
+	"\0\s[4]Head in the clouds, my dear~?"
+	"\0\s[0]You are doing lovely, darling."
 	
-	"\0\s[1]Tell me, dear...\x Do I look %(appearanceadj) today? \n\n\![*]\q[Yes my liege,OnSwadLikerUser] \n\![*]\q[You look okay,OnSwadNeutralUser]\n\![*]\q[No you look like SHIT,OnSwadHaterUser]"
-	
-
-	"\0\s[4]What are you working on now, my dear?"
-	"\0\s[1]Looking %(appearanceadj) as usual, my darling."
-
+	"\0\s[0]Have you had any %(drinknoun) recently?"
+	"\0\s[0]Have you had any food to nibble on recently?"	
+	"\0\s[0]Remember to stretch, darling, your wings shall suffer without it."
+	"\0\s[0]Lovely outfit today."
+	"\0\s[0]You are looking %(appearanceadj) today."	
+	"\0\s[0]Looking %(appearanceadj) as usual, my darling."
+	"\0\s[0]Do I look %(appearanceadj) today? No need to answer, I can tell from how you look at me.\x \0\s[4]You love me~"
+	"\0\s[1]You are %(appearanceadj) today, my dear."
+	"\0\s[1]Simply %(appearanceadj), you are. I could never tire of gazing upon you."
 	"\0\s[1]You're very special, darling. I don't like to spend this much time with just about anybody."
-	
-	"\0\s[1]How are you feeling today, darling? \n\![*]\q[Great,OnFeelingGreat] \n\![*]\q[Fine,OnFeelingFine] \n\![*]\q[Terrible,OnFeelingShit]"
-	
-	"\0\s[0]You seem to sit here for quite some time. \xTell me...\w5\0\s[2] Do you happen to get lonely? \n\w8\![*]\q[Yes,OnLonelyUser]\n\![*]\q[No,OnNotLonelyUser]\n\![*]\q[Why do you ask?,OnCounterLonelyUser]"
-	
-	"\0\s[3]Darling, I have had just the most eventful day... \n%(OnStartRambling)"
-	
-	
+
 	//being whiny for scraps
 	"\0\s[4]You're being rather boring despite inviting me out to come sit with you, my darling. \w8Won't you entertain a poor man?"
 	"\0\s[6]Are you ignoring me?"
@@ -63,15 +83,5 @@ RandomTalk : nonoverlap_pool
 	"\0\s[2](Loud sigh.)"
 	"\0\s[2]Darling, please chat with me. I am dreadfully bored."	
 	"\0\s[3](He clicks quietly. He refuses to look at you.)"	
-	
-	
-	//tea chain start
-	"\0\s[0]Mmm... tea? \n%(OnStartTea)"
 
-	
-	
-		//fucking off of his own accord
-	//	"\0\s[0]Oh my, duty calls.\w8 Summon me when you have need,\w5 darling!\w8\w8\x\-"
-	//	"\0\s[0]My people need me.\w8 I take my leave.\w8\w8\x\-"
-	//	"\0\s[0]I enjoy your company,\w5 darling,\w5 but I really must return to my work.\w8\w8 \nIt was lovely speaking with you again.\w8\w8\x\-"
 }
