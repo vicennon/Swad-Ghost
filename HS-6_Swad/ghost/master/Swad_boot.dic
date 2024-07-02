@@ -5,9 +5,9 @@ OnFirstBoot
 	stroke = 0
 	LastTalk = ""
 	
-	"\p[0]\s[0] My, my, what have we here?\w8 What a strange place I’ve found myself in. And who are you, dear?\w8 ... %(username), is it? A pleasure."
+	"\p[0]\s[0]\i[100]\i[101] My, my, what have we here?\w8 What a strange place I’ve found myself in. And who are you, dear?\w8 ... %(username), is it? A pleasure."
 
-	"\0\s[0] ...? \w8Oh my, how quaint.\w8 You’ve managed something interesting. I’ll allow this...\w8 Just to see how you can entertain me, dear."
+	"\0\s[0]\i[100]\i[101] ...? \w8Oh my, how quaint.\w8 You’ve managed something interesting. I’ll allow this...\w8 Just to see how you can entertain me, dear."
 
 }
 
@@ -36,44 +36,44 @@ OnBoot
 	--
 	if _today == _user_birthday
 	{
-		"\0\s[5]Happy birthday, darling!"
-		"\0\s[5]Happy Birthday, %(username)~! (He blows a kiss.)"
+		"\0\s[5]\i[100]\i[101]Happy birthday, darling!"
+		"\0\s[5]\i[100]\i[101]Happy Birthday, %(username)~! (He blows a kiss.)"
 	}
 	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
 	{
-		"\0\s[5]It's new year's day for you, is it? Happy day!"
+		"\0\s[5]\i[100]\i[101]It's new year's day for you, is it? Happy day!"
 	}
 	elseif _today == "12/21" //Winter solistice, birthday?
 	{
-		"\0\s[5]It’s my birthday today, dear. (expectant look)"
+		"\0\s[5]\i[100]\i[101]It’s my birthday today, dear. (He's giving you an expectant look.)"
 	}
 	else //Normal boot
 	{
-		"\0\s[1]Oho, so you’ve requested my presence again?"
-		"\0\s[0]Whatever is it? I was in the middle of my tea, I’ll have you know."
-		"\0\s[4]Hmm? \w5I’m here again. Hello, dear."
-		"\0\s[1]Did you miss me so much?\w5 I’m flattered, darling."
-		"\0\s[4]Staying positive, my dear?"
-		"\0\s[4]You again? No offense, darling."
-		"\0\s[6]My, my, my. What have we here?"
-		"\0\s[1]Eager for my attention?"
-		"\0\s[1]Worry no longer, darling! I am here."
-		"\0\s[1]Rejoice, for I have arrived!"
-		"\0\s[1]\f[italic,true]Daaaarling,\f[italic,false] lovely to see you again~!"
+		"\0\s[1]\i[100]\i[101]Oho, so you’ve requested my presence again?"
+		"\0\s[0]\i[100]\i[101]Whatever is it? I was in the middle of my tea, I’ll have you know."
+		"\0\s[4]\i[100]\i[101]Hmm? \w5I’m here again. Hello, dear."
+		"\0\s[1]\i[100]\i[101]Did you miss me so much?\w5 I’m flattered, darling."
+		"\0\s[4]\i[100]\i[101]Staying positive, my dear?"
+		"\0\s[4]\i[100]\i[101]You again? No offense, darling."
+		"\0\s[6]\i[100]\i[101]My, my, my. What have we here?"
+		"\0\s[1]\i[100]\i[101]Eager for my attention?"
+		"\0\s[1]\i[100]\i[101]Worry no longer, darling! I am here."
+		"\0\s[1]\i[100]\i[101]Rejoice, for I have arrived!"
+		"\0\s[1]\i[100]\i[101]\f[italic,true]Daaaarling,\f[italic,false] lovely to see you again~!"
 	}
 }
 
 OnClose
 {
-	"\0\s[4]Farewell."
-	"\0\s[4]Goodbye, darling."
-	"\0\s[1]\f[italic,true]Ta-ta for now~!\f[italic,false]"
-	"\0\s[1]Toodles, dear!"
-	"\0\s[1]Fare thee well!"
-	"\0\s[1]Have a lovely day~!"
-	"\0\s[4]Off to another adventure, my dear?"
-	"\0\s[0]I had something to do anyway."
-	"\0\s[4]So long, my darling."
+	"\0\s[4]\i[100]\i[101]Farewell."
+	"\0\s[4]\i[100]\i[101]Goodbye, darling."
+	"\0\s[1]\i[100]\i[101]\f[italic,true]Ta-ta for now~!\f[italic,false]"
+	"\0\s[1]\i[100]\i[101]Toodles, dear!"
+	"\0\s[1]\i[100]\i[101]Fare thee well!"
+	"\0\s[1]\i[100]\i[101]Have a lovely day~!"
+	"\0\s[4]\i[100]\i[101]Off to another adventure, my dear?"
+	"\0\s[0]\i[100]\i[101]I had something to do anyway."
+	"\0\s[4]\i[100]\i[101]So long, my darling."
 
 	--
 	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work

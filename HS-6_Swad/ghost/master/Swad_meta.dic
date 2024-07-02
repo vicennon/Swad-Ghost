@@ -159,7 +159,7 @@ OnBIFFFailure
 		when "artificial"; _reason = "canceled by user"
 	}
 
-	"\0\s[0]Could not get emails: %(_reason)."
+	"\0\s[0]\i[100]\i[101]Could not get emails: %(_reason)."
 }
 
 
