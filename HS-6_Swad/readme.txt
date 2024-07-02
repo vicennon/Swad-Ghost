@@ -1,5 +1,3 @@
-[TEMPORARY README CHANGE THIS BEFORE RELEASE]
-
 Summoning his feathery highness to your computer, it's the Swad ghost! (Trumpets blare)
 
 Swapdream!Dream (Swad) is an royal butthhead who loves to talk shit, ramble about tea, and beg for your attention. He has a god complex and thinks you're a special donut.
@@ -13,6 +11,17 @@ Double left-click to ask him to talk, what he last said, or toggle his speech se
 Friend point system to be developed in a later version. 
 
 Have fun listening to him complain about foreign monarchies and politics!
+
+___
+VERSIONS & UPDATES:
+(v.0.2) - You Are Here
+___
+CREDITS:
+
+Development Team:
+- Heartstitched: https://www.tumblr.com/monster-kind
+- Robanilla: https://www.tumblr.com/robanilla 
+- Vicen_non: https://www.tumblr.com/vicen-non
 
 Simplicity Template v1.0.8 https://github.com/Zichqec/simplicity_template
 Using YAYA Tc571-5 https://github.com/yaya-shiori/
