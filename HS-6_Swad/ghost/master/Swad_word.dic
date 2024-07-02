@@ -312,7 +312,7 @@ OnStartRambling
 			"\0\s[1]I would hate to scare off a new friend, after all.\e:chain=end"
 		}}CHAIN
 		
-OnBroRamble
+OnBroRamble //this one is for asking about his bro or who his bro is
 	{
 		"\0\s[5]Oh, I could go on about him forever! Would you care to listen?\w6 Ahaha, I will tell you all about him.\e:chain=broramble"
 	}
