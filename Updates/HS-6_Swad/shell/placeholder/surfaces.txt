@@ -273,7 +273,7 @@ surface6
 
 //Collisions for Swad. For many shells the collisions will have to be set per-surface because they'll be different, but I didn't want to waste the space here.
 
-surface.append0
+surface.append0-7
 {
 	collisionex0,Head,region,Collision.png,245,210,85
 	collisionex1,Wings,region,Collision.png,178,112,0
