@@ -32,12 +32,14 @@ OnActMenu : all
     "\_q(You want...)\_q\n"
 	"\![*]\q[some SUPPORT,OnEncouragement]"
 	"\![*]\q[to OBSERVE,OnObserve], \n"
-	"\![*]\q[offer a GIFT,OnGift]\n"
+	//"\![*]\q[offer a GIFT,OnGift]\n"
 }
 
 OnObserve : all
 {
 	"\0\s[5]What are you staring at?"
+	"\0\s[5]Enjoying yourself, darling?"
+	"\0\s[5]See what you like?"
 }
 
 OnGift: all
@@ -94,7 +96,7 @@ OnPreferTouch
 
 OnAskBio
 {
-	"\0\s[6]About \f[italics,true]meeee~?\f[italics,false] How delightful of you to ask!"
+	"\0\s[6]About \f[italics,true]meeee~?\f[italics,false] /x%(OnBioRamble)"
 }
 
 OnAskFam
@@ -103,7 +105,7 @@ OnAskFam
 	"\0\s[4]Ah, my baby brother... I love him very much."
 	"\0\s[1]My dear little brother Nightmare! Surely you have heard of him. \w6\0\s[2]He is rather infamous."
 	"\0\s[0]Do you refer to my brother? What is it that you need to know about him?\x%(OnBroRamble)"
-	"\0\s[0]"
+	"\0\s[0]Why do you ask?"
 	
 }
 

@@ -352,3 +352,21 @@ OnWineRamble
 			"\0\s[5]No need to answer, I know you would only answer with an exuberant yes!"
 			"\0\s[0]Anyway, that is my opinion on wine~\e:chain=end"
 		}}CHAIN
+		
+OnBioRamble
+	{
+		"\0\s[0]How delightful of you to ask!/e:chain=bioramble"		
+	}
+	bioramble	
+		{{CHAIN
+			
+			"Of course, you know my name. I am called Dream, Guardian of Positivity. \w5\0\s[0]\i[100]\i[102]I maintain the balance of good things in the world, like joy and love..."
+			"\0\s[0]\i[100]\i[103]My followers call me the Angel, His Radiance, so on and so forth... you've heard them before."
+			"Let's see... Something interesting about myself? \w5\0\s[0]\i[100]\i[101]Well, there's quite a lot to cover."
+			"My goal is to achieve total paradise for everyone. \0\s[0]\i[100]\i[101]That includes you~! (He winks.)"
+			"\0\s[0]\i[100]\i[103]To do so, I nurture the lost and the fallen with my magic. They regain their health and hope for the future."
+			"And once they have fully recovered, they can choose a life free of suffering... or to help guide others to paradise~"
+			"All of this helps me save more people from suffering. Their hope, their joy, their peace..."
+			"\0\s[4]\i[100]\i[104]I will make the world such a beautiful place."
+			"And finally, when I'm done... He'll find peace, too. /w8\0\s[0]\i[100]\i[104]We will be so happy together."
+		}}CHAIN
