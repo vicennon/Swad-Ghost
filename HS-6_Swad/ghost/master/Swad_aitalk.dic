@@ -1,0 +1,77 @@
+OnAiTalk
+{
+	if CHAIN.IDName == ""
+	{
+		LastTalk = RandomTalk
+	}
+	else
+	{
+		LastTalk = ChainTalk
+	}
+	LastTalk
+}
+
+RandomTalk : nonoverlap_pool
+{
+	"\0\s[0]\i[100]\i[101]"
+	"\0\s[0]\i[100]\i[101]"
+	"\0\s[1]\i[100]\i[101]"
+	"\0\s[4]\i[100]\i[101]"
+	"\0\s[4]\i[100]\i[101]"
+	"\0\s[0]\i[100]\i[101]There was a new tea blend that came in the other day.\w8\n I’m not quite sure if I enjoy the scent...\w8\w8\n\n	\0\s[1]\i[100]\i[101] Perhaps you’d like it more. \n\n\![*]\q[Yes please,OnTeaLiker] \n\![*]\q[No thank you,OnTeaHater]"
+	"\0\s[6]\i[100]\i[101]How exactly did you find me, anyway? You must have really wanted my attention to go to these lengths."
+	"\0\s[0]\i[100]\i[101]I am glad to be away from my desk for a little while. It can get so boring reading all those %(papersnoun)."
+	"\0\s[0]\i[100]\i[101]I wonder what else is out here."
+	"\0\s[6]\i[100]\i[101]What have you been working on, darling?"
+	"\0\s[4]\i[100]\i[101]Relaxing, dear?"
+	"\0\s[6]\i[100]\i[101]Thinking hard?"
+	"\0\s[0]\i[100]\i[101]Did you get distracted thinking about something, darling?"
+	"\0\s[1]\i[100]\i[101]Did you get distracted thinking about something, darling? \x\0\s[6]\i[100]\i[101]Perhaps my %(appearanceadj) face?"
+	"\0\s[0]\i[100]\i[101]I'm feeling rather listless today. After a few centuries, you run out of things to do or think about..."
+	"\0\s[1]\i[100]\i[101]Have you any stories to tell me?"
+	"\0\s[1]\i[100]\i[101]It is so lovely to see you, my dear. A good change of scenery is always necessary."
+	"\0\s[0]\i[100]\i[101]I had the loveliest %(dessertnoun) today. Too bad you cannot have any."
+	
+	"\0\s[1]\i[100]\i[101]Tell me, dear...\x Do I look %(appearanceadj) today? \n\n\![*]\q[Yes my liege,OnSwadLikerUser] \n\![*]\q[You look okay,OnSwadNeutralUser]\n\![*]\q[No you look like SHIT,OnSwadHaterUser]"
+	
+
+	"\0\s[4]\i[100]\i[101]What are you working on now, my dear?"
+	"\0\s[1]\i[100]\i[101]Looking %(appearanceadj) as usual, my darling."
+
+	"\0\s[1]\i[100]\i[101]You're very special, darling. I don't like to spend this much time with just about anybody."
+	
+	"\0\s[1]\i[100]\i[101]How are you feeling today, darling? \n\![*]\q[Great,OnFeelingGreat] \n\![*]\q[Fine,OnFeelingFine] \n\![*]\q[Terrible,OnFeelingShit]"
+	
+	"\0\s[0]\i[100]\i[101]You seem to sit here for quite some time. \xTell me...\w5\0\s[2]\i[100]\i[104] Do you happen to get lonely? \n\w8\![*]\q[Yes,OnLonelyUser]\n\![*]\q[No,OnNotLonelyUser]\n\![*]\q[Why do you ask?,OnCounterLonelyUser]"
+	
+	"\0\s[3]\i[100]\i[101]Darling, I have had just the most eventful day... \n%(OnStartRambling)"
+	
+	
+	//being whiny for scraps
+	"\0\s[4]\i[100]\i[101]You're being rather boring despite inviting me out to come sit with you, my darling. \w8Won't you entertain a poor man?"
+	"\0\s[6]\i[100]\i[101]Are you ignoring me?"
+	"\0\s[3]\i[100]\i[101]Darling, you haven't spoken to me in ages. I'm getting a little cold!"
+	"\0\s[1]\i[100]\i[101]My dear, could you spare a little attention for a sweet bird?"
+	"\0\s[0]\i[100]\i[101]Should I start singing for your attention?"
+	"\0\s[6]\i[100]\i[101]%(username)? Can you still hear me?"
+	"\0\s[0]\i[100]\i[101]I'm rather bored."
+	"\0\s[6]\i[100]\i[101]You're still there, right?"
+	"\0\s[6]\i[100]\i[101]You're not ignoring me, are you?"
+	"\0\s[3]\i[100]\i[101]Whatever is more important than me right now?"
+	"\0\s[3]\i[100]\i[101]You wouldn't call me just to ignore me, darling."
+	"\0\s[6]\i[100]\i[101]You seem rather enraptured by whatever it is you're doing."	
+	"\0\s[2]\i[100]\i[101](Loud sigh.)"
+	"\0\s[2]\i[100]\i[101]Darling, please chat with me. I am dreadfully bored."	
+	"\0\s[3]\i[100]\i[101](He clicks quietly. He refuses to look at you.)"	
+	
+	
+	//tea chain start
+	"\0\s[0]\i[100]\i[101]Mmm... tea? \n%(OnStartTea)"
+
+	
+	
+		//fucking off of his own accord
+	//	"\0\s[0]\i[100]\i[101]Oh my, duty calls.\w8 Summon me when you have need,\w5 darling!\w8\w8\x\-"
+	//	"\0\s[0]\i[100]\i[101]My people need me.\w8 I take my leave.\w8\w8\x\-"
+	//	"\0\s[0]\i[100]\i[101]I enjoy your company,\w5 darling,\w5 but I really must return to my work.\w8\w8 \nIt was lovely speaking with you again.\w8\w8\x\-"
+}

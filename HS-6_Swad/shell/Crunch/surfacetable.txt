@@ -1,0 +1,19 @@
+charset,UTF-8
+version,1
+option,DisableNoDefineSurfaces
+
+
+// Sakura normal surface
+group,Swad
+{
+scope,0
+0, Neutral
+1, Happy
+2, Sad
+3, Angry
+4, Gleeful
+5, Hype
+6, Brow Raise
+
+
+}

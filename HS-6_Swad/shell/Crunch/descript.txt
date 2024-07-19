@@ -1,0 +1,10 @@
+charset,UTF-8
+type,shell
+
+name,Crunchy Swad
+craftman,heart, vi
+craftmanw,heart, vi
+craftmanurl,
+
+seriko.use_self_alpha,1
+seriko.alignmenttodesktop,free

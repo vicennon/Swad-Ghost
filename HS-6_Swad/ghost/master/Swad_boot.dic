@@ -1,0 +1,80 @@
+OnFirstBoot
+{
+	//If you add variables, make sure to initialize them here!
+	//Note - I haven't added anything about username or pronouns here because it's all handled by the SSP prefs
+	stroke = 0
+	LastTalk = ""
+	
+	"\p[0]\s[0]\i[100]\i[101] My, my, what have we here?\w8 What a strange place I’ve found myself in. And who are you, dear?\w8 ... %(username), is it? A pleasure."
+
+	"\0\s[0]\i[100]\i[101] ...? \w8Oh my, how quaint.\w8 You’ve managed something interesting. I’ll allow this...\w8 Just to see how you can entertain me, dear."
+
+}
+
+OnInitialize
+{
+	//If you want some variables to reset on boot, put them here. This event will happen even if you add other events like OnGhostChanged
+	//OnInitialize is a NOTIFY event! That means it cannot return scripts. This event is only meant for things like variable changes. See this page on Ukadoc for more info: https://ukagakadreamteam.github.io/ukadoc/manual/spec_shiori3.html
+	
+	//If you add new variables in updates, I recommend initializing them like so:
+	//if !ISVAR("NewVariable"); NewVariable = 0
+	//This means that it will only set the new variable if the user doesn't already have it, so that their variables don't get overwritten
+	
+	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
+	{
+		LastTalk = ""
+	}
+}
+
+OnBoot
+{
+	_temp = SHIORI3FW.UserBirthday
+	_user_birthday = "%(_temp[1])/%(_temp[2])" //M/D, if you want it D/M you can switch it around
+	_today = "%(month)/%(day)" //Again, switch this around if using D/M
+	
+	"\1\s[10]\0\s[0]\i[100]\i[101]"
+	--
+	if _today == _user_birthday
+	{
+		"\0\s[5]\i[100]\i[101]Happy birthday, darling!"
+		"\0\s[5]\i[100]\i[101]Happy Birthday, %(username)~! (He blows a kiss.)"
+	}
+	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
+	{
+		"\0\s[5]\i[100]\i[101]It's new year's day for you, is it? Happy day!"
+	}
+	elseif _today == "12/21" //Winter solistice, birthday?
+	{
+		"\0\s[5]\i[100]\i[101]It’s my birthday today, dear. (He's giving you an expectant look.)"
+	}
+	else //Normal boot
+	{
+		"\0\s[1]\i[100]\i[101]Oho, so you’ve requested my presence again?"
+		"\0\s[0]\i[100]\i[101]Whatever is it? I was in the middle of my tea, I’ll have you know."
+		"\0\s[4]\i[100]\i[101]Hmm? \w5I’m here again. Hello, dear."
+		"\0\s[1]\i[100]\i[101]Did you miss me so much?\w5 I’m flattered, darling."
+		"\0\s[4]\i[100]\i[101]Staying positive, my dear?"
+		"\0\s[4]\i[100]\i[101]You again? No offense, darling."
+		"\0\s[6]\i[100]\i[101]My, my, my. What have we here?"
+		"\0\s[1]\i[100]\i[101]Eager for my attention?"
+		"\0\s[1]\i[100]\i[101]Worry no longer, darling! I am here."
+		"\0\s[1]\i[100]\i[101]Rejoice, for I have arrived!"
+		"\0\s[1]\i[100]\i[101]\f[italic,true]Daaaarling,\f[italic,false] lovely to see you again~!"
+	}
+}
+
+OnClose
+{
+	"\0\s[4]\i[100]\i[101]Farewell."
+	"\0\s[4]\i[100]\i[101]Goodbye, darling."
+	"\0\s[1]\i[100]\i[101]\f[italic,true]Ta-ta for now~!\f[italic,false]"
+	"\0\s[1]\i[100]\i[101]Toodles, dear!"
+	"\0\s[1]\i[100]\i[101]Fare thee well!"
+	"\0\s[1]\i[100]\i[101]Have a lovely day~!"
+	"\0\s[4]\i[100]\i[101]Off to another adventure, my dear?"
+	"\0\s[0]\i[100]\i[101]I had something to do anyway."
+	"\0\s[4]\i[100]\i[101]So long, my darling."
+
+	--
+	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
+}

@@ -1,0 +1,106 @@
+//Separate from the menus because you could put other interactions here, like poking or booping or punching or asking about various hotspots
+OnMouseDoubleClick
+{
+	if reference5 == 0 //reference5 is the mouse button being clicked, in this case a left click
+	{
+		//reference3 is which character is being clicked
+		//If you want to add double click interactions, reference4 will be the name of the hitbox the mouse is over
+		
+		if reference3 == 0
+		{
+			OnSakuraMenu
+		}
+		else
+		{
+			OnKeroMenu
+		}
+	}
+}
+
+OnMouseClick
+{
+	if reference5 == 0 //reference5 is the mouse button being clicked, in this case a left click
+	{
+		if reference4 == "Wings"
+		{
+			"\0\s[6]\i[100]\i[101]Excuse me..."
+			"\0\s[3]\i[100]\i[101]You shouldn't do that."
+			"\0\s[3]\i[100]\i[101]Dear, you have many privileges, and that is not one of them."
+		}
+		
+		elseif reference4 == "Halo"
+		{
+			"\0\s[4]\i[100]\i[101]That's not for fiddling with, dear."
+			"\0\s[6]\i[100]\i[101]You ought to ask first before touching, darling."						
+		}
+		
+		elseif reference4 == "Hands"
+		{
+			"\0\s[6]\i[100]\i[101]Trying to kiss my hand? Rather suave of you."
+			"\0\s[6]\i[100]\i[101]That's not necessary, darling. Just a simple hello will do.\w5 Better yet, buy me something, would you?"
+			"\0\s[6]\i[100]\i[101]Oh my, dear, I'm afraid we're not at that level of comfort yet."
+			"\0\s[6]\i[100]\i[101]You ought to ask first before touching, darling."			
+		}
+		
+		elseif reference4 == "Brooch"
+		{
+			"\0\s[6]\i[100]\i[101]You ought to ask first before touching, darling."			
+			"\0\s[3]\i[100]\i[101]Don't touch that, please."
+			"\0\s[6]\i[100]\i[101]That's mine."
+			"\0\s[6]\i[100]\i[101]Curious? You can't have it, if that's what you're wondering.\w6 I know, how cruel of me."			
+		}
+	}
+}
+OnMouseMove
+{
+	if reference4 != ""
+	{
+		stroke++
+		
+		if stroke % 40 == 0
+		{
+			if reference3 == 0; OnMouseMove.Sakura
+			else; OnMouseMove.Kero
+		}
+	}
+}
+
+OnMouseMove.Sakura
+{
+	if reference4 == "Head"
+	{
+		"\0\s[6]\i[100]\i[101]Petting??"
+		"\0\s[6]\i[100]\i[101]Are you...? Petting me? \w5Do I seem like some kind of dog to you?"
+		"\0\s[6]\i[100]\i[101]Dear?? Whatever are you doing?"
+		"\0\s[4]\i[100]\i[101]This is unnecessary, darling. Deeply unnecessary.\w5 Yet somehow pleasant."
+		"\0\s[6]\i[100]\i[101].\w5.\w5.\w5 ???"		
+	}
+	elseif reference4 == "Wings"
+	{
+//		"\0\s[0]\i[100]\i[101]"
+	}
+	elseif reference4 == "Halo"
+	{
+//		"\0\s[0]\i[100]\i[101]"
+	}
+	elseif reference4 == "Brooch"
+	{
+//		"\0\s[0]\i[100]\i[101]"
+	}
+	elseif reference4 == "Hands"
+	{
+//		"\0\s[0]\i[100]\i[101]"
+	}
+}
+OnMouseMove.Kero
+{
+	if reference4 == "head"
+	{
+		"\1\s[10]Petting..."
+	}
+}
+
+OnMouseLeaveAll
+{
+	stroke = 0
+}
