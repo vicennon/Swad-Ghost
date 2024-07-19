@@ -46,6 +46,18 @@ papersnoun
 	"soap operas"
 }
 
+drinknoun
+{
+	"water"
+	"juice"
+	"wine"
+	"good drinks"
+	"delicious drinks"
+	"refreshments"
+	"energy drinks"
+	"coffee"
+}
+
 dessertnoun
 {
 	"pastry"
@@ -66,6 +78,40 @@ dessertnoun
 	"opera cake"
 	"madelines"
 }
+
+OnEncouragement
+{
+	"%(encouragementphrase)"
+}
+
+encouragementphrase
+{
+	"You are doing so well right now."
+	"Doing your best is enough."
+	"Do not push yourself so hard, my darling."
+	"Lovely job so far, my dear."
+	"Of course, you're doing amazing!"
+	"You are so very %(appearanceadj)."
+	"You have gotten very much done today, even if you do not feel like it."
+	"You deserve to rest, darling."
+	"You deserve the world, my dear."
+	"You have been working very hard, and it is easy for me to see that. I think you are doing a lovely job."
+	"Life can be very stressful, my darling. It is hard to stay positive in these times...\xBut you are being so strong for me. You deserve to rest when you can."
+	"Stay positive, my dear."
+	"You can do whatever you put your mind to, dear."
+	"I will always be cheering you on, darling."
+	"Your hard work will pay off, dear."
+	"Just a little further, and you will be done!"
+	"Baby steps, my dear. You will make it to the end, I am sure of it."
+	"I believe in you."
+	"I have faith in your abilities."
+	"We fail when we stop trying, my dear. Do not let your insecurity stop you from doing what you love."
+	"When it feels like the world is against you... I am here. I know that is not true.\xYou are loved."
+	"You are not alone, my dear. I will keep you company when you have need of me."
+	"You are doing so good for me."
+	"Have you always been this stunning?"
+	"I know you can do it."
+
 
 OnSwadLikerUser
 {
@@ -263,4 +309,64 @@ OnStartRambling
 			"\0\s[4]\i[100]\i[101]I am flattered that you would like to know me so intimately... \w5\0\s[5]\i[100]\i[101]But darling,\w8 we hardly know each other!\w8\w8 \n\nAnd there is no chaperone to ensure we do not get up to...\w8 d\w2e\w2\w2e\w2p\w2l\w2y\w5 friendly matters\w2.\w2.\w2.\w8!"
 			"\0\s[0]\i[100]\i[102]Ohoho, but I digress. I will show you when I deem you ready to see."
 			"\0\s[1]\i[100]\i[101]I would hate to scare off a new friend, after all.\e:chain=end"
+		}}CHAIN
+		
+		
+OnBroRamble //this one is for asking about his bro or who his bro is
+	{
+		"\0\s[5]\i[100]\i[101]Oh, I could go on about him forever! Would you care to listen?\w6 Ahaha, I will tell you all about him.\e:chain=broramble"
+	}
+	
+	broramble
+		{{CHAIN
+			"\0\s[0]\i[100]\i[101]He has the same face as me, yet we appear so different."
+			"\0\s[2]\i[100]\i[101]I suppose that after my ascendance, he would seem so unlike me... The wings are rather hard to live up to."
+			"\0\s[0]\i[100]\i[101]And his attitude is far more shy than my own. \0\s[6]Even now, I hear that he is remarkably introverted.\xI cannot say I am displeased. \0\s[4]I have always been a rather protective older sibling..."
+			"\0\s[2]\i[100]\i[101]I must admit that I dislike that he is on his own, though. He can be so lonely, and I worry for him."
+			"\0\s[0]\i[100]\i[101]Everything I do is for him. \0\s[2]For his benefit.\xA wonderful future, a wonderful, peaceful world to live in, a wonderful home to stay in..."
+			"\0\s[2]\i[100]\i[101]No shortage of food, no shortage of love, no shortage of pillows or blankets, and no fear of freezing in the outside world."
+			"\0\s[3]\i[100]\i[101]Yet he insists on ignoring my offers and invitations to come stay at my palace. He decides to frolick about with the arbitrary, unworthy muck of the world."
+			"\0\s[0]\i[100]\i[101]Hooligans, criminals, ants, all the same... No one is deserving of his presence, but me.\xAnd yet."
+			"\0\s[0]\i[100]\i[101]He denies me... My foolish, silly younger brother."
+			"\0\s[2]\i[100]\i[101]I do not understand why he runs. It makes no sense, honestly. But he is prone to his games of chase."
+			"\0\s[0]\i[100]\i[101]When we were younger, he would have to have the truth of his emotions forced out of him. It is only through the benefit of our abilities that I can tell what he really feels."
+			"\0\s[3]\i[100]\i[101]Stars, do not try to make him speak on his feelings. The effort is greater than pushing a boulder uphill. He simply won't talk."
+			"\0\s[5]\i[100]\i[101]I love my little brother. He is stubborn and so silly and foolish."
+			"\0\s[1]\i[100]\i[101]I would love him forever, till the heat death of this universe and every single one beside it."
+			"\0\s[2]\i[100]\i[101]I would love him to death."
+			"\0\s[2]\i[100]\i[101]I will love him forever, no matter how long it takes for my brother to come to me."
+			"\0\s[0]\i[100]\i[101]Oh, have I been yammering on again?\x\0\s[2]Not many people listen to me talk about him for so long.\e:chain=end"
+		}}CHAIN
+
+OnWineRamble
+	{
+		"\0\s[4]I do not particularly enjoy or dislike wine./e:chain=wineramble"
+	}
+	wineramble
+		{{CHAIN
+			"\0\s[5]It does pair rather well with certain dishes. When I can taste just a bit of the flavors, they are stunning together."
+			"\0\s[0]Unfortunately, my senses are rather muddled, and therefore the subtleties of wine-tasting are lost on me. I am a plebian to wines."
+			"\0\s[0]However, I simply cannot turn down a delightful resource to hoard.\xErm, invest in.."
+			"\0\s[0]Mortals do so love the more aged wines, yes? Something about the process causing the flavors to develop quite deeply, and the fermentation...?"
+			"\0\s[1]Would you say my age has also aged me like fine wine, darling?"
+			"\0\s[5]No need to answer, I know you would only answer with an exuberant yes!"
+			"\0\s[0]Anyway, that is my opinion on wine~\e:chain=end"
+		}}CHAIN
+		
+OnBioRamble
+	{
+		"\0\s[0]How delightful of you to ask!/e:chain=bioramble"		
+	}
+	bioramble	
+		{{CHAIN
+			
+			"Of course, you know my name. I am called Dream, Guardian of Positivity. \w5\0\s[0]\i[100]\i[102]I maintain the balance of good things in the world, like joy and love..."
+			"\0\s[0]\i[100]\i[103]My followers call me the Angel, His Radiance, so on and so forth... you've heard them before."
+			"Let's see... Something interesting about myself? \w5\0\s[0]\i[100]\i[101]Well, there's quite a lot to cover."
+			"My goal is to achieve total paradise for everyone. \0\s[0]\i[100]\i[101]That includes you~! (He winks.)"
+			"\0\s[0]\i[100]\i[103]To do so, I nurture the lost and the fallen with my magic. They regain their health and hope for the future."
+			"And once they have fully recovered, they can choose a life free of suffering... or to help guide others to paradise~"
+			"All of this helps me save more people from suffering. Their hope, their joy, their peace..."
+			"\0\s[4]\i[100]\i[104]I will make the world such a beautiful place."
+			"And finally, when I'm done... He'll find peace, too. /w8\0\s[0]\i[100]\i[104]We will be so happy together."
 		}}CHAIN

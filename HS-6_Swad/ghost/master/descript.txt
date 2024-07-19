@@ -5,9 +5,9 @@ type,ghost
 
 shiori,yaya.dll
 
-craftman,
-craftmanw,
-craftmanurl,
+craftman, Heartstitched, Robanilla, Vicen_non
+craftmanw, Heartstitched, Robanilla, Vicen_non
+craftmanurl,https://www.tumblr.com/inks-inbox
 
 sakura.name,Swad
 kero.name,null
