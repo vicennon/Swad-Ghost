@@ -93,11 +93,11 @@ OnUpdateComplete
 {
 	if reference0 == "none"
 	{
-		"\0\s[0]\i[100]\i[101]There are no new files."
+		"\0\s[0]\i[100]\i[101]There are no new files. \w8\0\s[0]\i[100]\i[105]Make me some new ones~"
 	}
 	else
 	{
-		"\0\s[0]\i[100]\i[101]Update complete."
+		"\0\s[0]\i[100]\i[101]Update complete. \0\s[1]\i[100]\i[103]Thank you very much~!"
 	}
 }
 
@@ -108,10 +108,10 @@ OnUpdateFailure
 	case reference0
 	{
 		when "timeout"; _reason = "connection timed out"
-		when "md5 miss"; _reason = "MD5 error on file %(_file)\n\nPlease contact the ghost author for assistance"
+		when "md5 miss"; _reason = "MD5 error on file %(_file)\n\nPlease contact the ghost author for assistance, my dear!"
 		when "artificial"; _reason = "canceled by user"
 	}
-	"\0\s[0]\i[100]\i[101]Could not update: %(_reason)."
+	"\0\s[0]\i[100]\i[101]Apologies, darling. Could not update: %(_reason)."
 }
 
 
@@ -124,24 +124,24 @@ OnSNTPCompare
 	{
 		_s = ""; if reference3 != 1; _s = "s"
 		
-		"\0\s[0]\i[100]\i[101]The clock is off by %(reference3) second%(_s).\n\n"
+		"\0\s[0]\i[100]\i[101]The clock is off by %(reference3) second%(_s). Are you going to fix that?\n\n"
 		--
 		"\![*]\q[Fix it,script:\6]  \![*]\q[Leave it,blank]"
 	}
 	else
 	{
-		"\0\s[0]\i[100]\i[101]The clock is accurate."
+		"\0\s[0]\i[100]\i[101]The clock is accurate, my dear."
 	}
 }
 
 OnSNTPCorrect
 {
-	"\0\s[0]\i[100]\i[101]The clock has been corrected."
+	"\0\s[0]\i[100]\i[101]The clock has been corrected. Good work, my dear."
 }
 
 OnSNTPFailure
 {
-	"\0\s[0]\i[100]\i[101]Could not correct the clock."
+	"\0\s[0]\i[100]\i[101]Could not correct the clock. Let me try again?"
 }
 
 
@@ -159,7 +159,7 @@ OnBIFFFailure
 		when "artificial"; _reason = "canceled by user"
 	}
 
-	"\0\s[0]\i[100]\i[101]Could not get emails: %(_reason)."
+	"\0\s[0]\i[100]\i[101]Could not get emails: %(_reason). Goodness."
 }
 
 
@@ -175,5 +175,5 @@ OnHeadlinesenseFailure
 		when "can't analyze"; _reason = "can't analyze the file"
 	}
 
-	"\0\s[0]\i[100]\i[101]Could not get RSS: %(_reason)."
+	"\0\s[0]\i[100]\i[101]Could not get RSS: %(_reason). My goodness."
 }

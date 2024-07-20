@@ -19,5 +19,5 @@ OnMouseDoubleClick
 OnEMERG.ErrorMessage
 {
 	ERASEVAR("EMERG.give_error_message")
-	"\_qError in the dic files, cannot load. Check the error log for details.\x"
+	"\0\s[1]\i[100]\i[105]\_qThere was an error in the dic files, cannot load. Check the error log for details, my darling~\x"
 }
