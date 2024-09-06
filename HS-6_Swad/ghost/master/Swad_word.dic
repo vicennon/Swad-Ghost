@@ -338,6 +338,55 @@ OnBroRamble //this one is for asking about his bro or who his bro is
 			"\0\s[0]\i[100]\i[101]Oh, have I been yammering on again?\x\0\s[2]Not many people listen to me talk about him for so long.\e:chain=end"
 		}}CHAIN
 
+OnBroStories //this is for asking about his childhood, stories about his bro
+{
+	"\0\s[5]\i[100]\i[101]Well, let me think of something interesting... Oh, I'm so nostalgic. There was this one time in the forest...\e:chain=hiddenforest"
+	"\0\s[5]\i[100]\i[101]I once discovered some wild grapes...\e:chain=wildgrapes"
+	"\0\s[5]\i[100]\i[101]I love stargazing, did you know? I used to do it all the time with my little brother.\e:chain=stargazing"
+}
+
+	hiddenforest
+	{{CHAIN
+		"There were plenty of days where I would follow him from some distance, and watch as he relaxed into the foliage."
+		"I never quite understood why he didn't want me to join him. I assumed it was because distance makes one's heart grow fonder, and every time he returned to me… I couldn't help but feel his yearning in the background."
+		"It's only natural to long for the warmth of one's own, of course. I will never turn down any such request… not anymore. Back then, though, I took him for granted."
+		"It was curiosity that moved me to follow him, and such the same convinced me to lurk. He was always more beautiful in the moonlight…"
+		"I once thought to grow closer to him by reading the novels he would stash in Mother's roots, but I could never quite get my head around such lengthy drivel. My brother was incredibly smart, and the stories he chose were proof of his intellect. I just wish he had chosen a few with more pictures."
+		"He loved reading, though, and I wanted to see what the fuss was about. I suppose it can be nice. Were I as wise as I am now, I would have asked him to read aloud, so that I might partake in his joys."
+		"In the rare occasions he shared his stories with me, the details often blurred as I fell into a trance at the sound of his voice."
+		"I wonder if he knew the hold he had over me. If he did, he never mentioned it."
+		"Once, I went to sit in his favored hideout when he wasn't there. It smelled like him, did you know that? At the time, I was just as small as he was, and fit perfectly into the space he left behind. It was like being held, and I remember dozing for a few hours there."
+		"When I woke up, it was the middle of the afternoon. He was stood before me, looking down at my curled form, and his expression…"
+		"I had the distinct worry that I had betrayed him, somehow. To this day, I still don't understand what I did wrong. He never went back to that reading spot again."
+	}}CHAIN
+
+	wildgrapes
+	{{CHAIN
+	"Naturally, I deemed it to be safe enough for my darling brother to consume."
+	"I knew he wouldn't make the trip out to the trellis himself, so I borrowed a basket from one of the villagers. I could collect a few bunches for Nightmare to snack on later."
+	"I went early in the morning, so the grapes would be cool and crisp to bite into. I filled up the basket with bunches of those vibrant, wild grapes. Going early also meant I wouldn't encounter many prying eyes demanding my attention."
+	"I must have been very quiet, because my darling brother was still asleep by the time I had returned. Nightmare looked so peaceful in his slumber that I dared not wake him."
+	"The sun was up proper before Nighty finally stirred. I had the basket of grapes tucked into Mother's roots, hidden in her shade. I presented the gift with due excitement. /n Nightmare must have been too tired to react."
+	"I took a small bunch, and demonstrated how to pick and eat the small fruits. I had forgotten to consider that he might have never seen them?"
+	"I picked a grape, and oh, I remember, %(username), just how plump and juicy this one promised to be, because I held it in my fingers as I offered my brother to take a bite. He turned that lovely shade…"
+	"The crunch of the skin must have been refreshing after a long night's rest. I could hardly peel my eyes away from the drop of juice running down his chin."
+	"Mesmerized, I continued to hand feed him the bunches of grapes I had collected, making sure he enjoyed each and every one. He deserves nothing but the height of luxury."
+	"He said my name with such a small, little whine. ‘That's enough for now,’ he said. I didn't want to stop. I offered him one more and I promised it would be the last one."
+	"He protested, of course, with the cutest pout gracing his expression. My brother is nothing if not obedient, though. He was sluggish with overindulgence at this point. I couldn't tell you just how many bunches I had procured for his enjoyment only for it to suddenly turn into mine."
+	"He leaned forward, wrapped his teeth over the fruit, nipping my fingers with a lack of subtlety. Time itself seemed to pause, if just to allow me the moment to admire the way tears started to collect in his eyes."
+	"\0\s[5]\i[100]\i[104]\w8 ...\w8 ... Pardon me. What was I saying?"
+	}}CHAIN
+	
+	stargazing
+	{{CHAIN
+	 "\0\s[5]\i[100]\i[104]Ah, there was a certain magic in it...  \w8 The way we would wrap ourselves in the night, holding each other close\w4 to stave off the chill between Mother’s roots."
+	 "His voice,\w5 a gentle whisper,\w5 would recount the constellations he had read about."
+	 "The stars above,\w5 glinting like celestial fireflies...\w8 they always reminded me of him. Something distant,\w5 quiet,\w5 yet profoundly beautiful.\w8 Something that eluded the reach of Mother's branches..."
+	 "Oh, what I wouldn't give to return to those moments. To entwine our hands once more,\w5 feel him nestle against my chest.\w8 To feel the gentle hum of his voice as he spoke, watching the adorable curve of his mouth as he smiled."
+	 "To caress his head, listening to his words... oh, his laugh! The sweetest sound, soft and breathy."
+	 "And the way his eyes would light up, animated with the joy of sharing his knowledge. I wonder if he still makes that same enchanting expression...!"
+	}}CHAIN
+	
 OnWineRamble
 	{
 		"\0\s[4]I do not particularly enjoy or dislike wine./e:chain=wineramble"
